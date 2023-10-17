@@ -62,7 +62,7 @@
       class="demo"
       style="
         position: relative;
-        background-image: url(image/cover.png);
+        background-image: url('image/cover.png');
         background-size: cover;
         height: 822px;
         width: 1465px;
@@ -79,7 +79,7 @@
           $(".demo").ripples({
             resolution: 256,
             dropRadius: 20,
-            perturbance: 0.04,
+            perturbance: 0.03,
           });
         } catch (e) {
           $(".error").show().text(e);
@@ -128,34 +128,31 @@
 
           currentIndex++;
           if (currentIndex < images.length) {
+            $(this).ripples("hide");
             const newImageUrl = images[currentIndex];
-            $(this).css("background-image", "url(" + newImageUrl + ")");
+            $(this).css("background-image", "url('" + newImageUrl + "')");
+            // $(this).ripples('set', 'imageUrl', newImageUrl);
+
             toggleButtonsVisibility(newImageUrl);
           }
         });
 
         // New individual event listeners for each button
-        $("#back").on("click", function () {
+        /* $("#back").on("click", function () {
           currentIndexButton1++;
           if (currentIndexButton1 < images.length) {
             const newImageUrl = images[currentIndexButton1];
-            $("#backgroundDiv").css(
-              "background-image",
-              "url(" + newImageUrl + ")"
-            );
+            $('#backgroundDiv').ripples('set', imageUrl, newImageUrl);
           }
           return false; // Prevent the click event from propagating to the parent div
-        });
+        }); */
 
         // New individual event listeners for each button
         $("#button1").on("click", function () {
           currentIndexButton1++;
           if (currentIndexButton1 < imagesButton1.length) {
             const newImageUrl = imagesButton1[currentIndexButton1];
-            $("#backgroundDiv").css(
-              "background-image",
-              "url(" + newImageUrl + ")"
-            );
+            $('#backgroundDiv').css("background-image", "url(" + newImageUrl + ")");
             toggleButtonsVisibility(newImageUrl);
           }
           return false; // Prevent the click event from propagating to the parent div
@@ -165,10 +162,7 @@
           currentIndexButton2++;
           if (currentIndexButton2 < imagesButton2.length) {
             const newImageUrl = imagesButton2[currentIndexButton2];
-            $("#backgroundDiv").css(
-              "background-image",
-              "url(" + newImageUrl + ")"
-            );
+            $('#backgroundDiv').css("background-image", "url(" + newImageUrl + ")");
             toggleButtonsVisibility(newImageUrl);
           }
           return false; // Prevent the click event from propagating to the parent div
@@ -178,10 +172,7 @@
           currentIndexButton3++;
           if (currentIndexButton3 < imagesButton3.length) {
             const newImageUrl = imagesButton3[currentIndexButton3];
-            $("#backgroundDiv").css(
-              "background-image",
-              "url(" + newImageUrl + ")"
-            );
+            $('#backgroundDiv').css("background-image", "url(" + newImageUrl + ")");
             toggleButtonsVisibility(newImageUrl);
           }
           return false; // Prevent the click event from propagating to the parent div
