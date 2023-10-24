@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      $(document).ready(function () {
+        $("#btnHome").click(function () {
+          window.location.href = "index.html";
+        });
+        $("#btnBack").click(function () {
+          history.back();
+        });
+        $(".FourButtonOne").click(function () {
+          
+        });
+        $(".FourButtonTwo").click(function () {
+          
+        });
+        $(".FourButtonThree").click(function () {
+          
+        });
+        $(".FourButtonFour").click(function () {
+          
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div
+      id="backgroundDiv"
+      class="demo ClothingCaseStudingContent"
+      style="background-image: url('image/home_acceleration.png')"
+    >
+      <div class="button FourButtonOne"></div>
+      <div class="button FourButtonTwo"></div>
+      <div class="button FourButtonThree"></div>
+      <div class="button FourButtonFour"></div>
+      <div class="button" id="btnHome"></div>
+      <div class="button" id="btnBack"></div>
+    </div>
+  </body>
+</html>
