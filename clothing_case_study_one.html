@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      $(document).ready(function () {
+        $("#btnHome").click(function () {
+          window.location.href = "index.html";
+        });
+        $("#btnBack").click(function () {
+          history.back();
+        });
+        $(".ClothingCaseOneOne").click(function () {
+          window.location.href = "clothing_case_study_one_content1.html";
+        });
+        $(".ClothingCaseOneTwo").click(function () {
+          window.location.href = "clothing_case_study_one_content2.html";
+        });
+        $(".ClothingCaseOneThree").click(function () {
+          window.location.href = "clothing_case_study_one_content3.html";
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div
+      id="backgroundDiv"
+      class="demo ClothingCaseStudingContent"
+      style="background-image: url('image/clothing_case_studing_one.png')"
+    >
+      <div class="button ClothingCaseOneOne"></div>
+      <div class="button ClothingCaseOneTwo"></div>
+      <div class="button ClothingCaseOneThree"></div>
+      <div class="button" id="btnHome"></div>
+      <div class="button" id="btnBack"></div>
+    </div>
+  </body>
+</html>

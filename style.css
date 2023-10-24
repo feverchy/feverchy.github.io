@@ -1,0 +1,193 @@
+@font-face {
+  font-family: "Avenir";
+  src: url("fonts/H-Avenir-2.ttc") format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir LT";
+  src: url("fonts/Avenir-LT-Std-95-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir BLACK";
+  src: url("fonts/AVENIR-BLACK-3.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+}
+.button {
+  position: absolute;
+  display: block;
+  background-color: rgba(0, 255, 255, 0.5);
+}
+
+#backgroundDiv {
+  position: relative;
+  background-size: cover;
+  height: 822px;
+  width: 1465px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#back {
+  top: 50px;
+  left: 120px;
+  width: 50px;
+  height: 50px;
+}
+
+#btnBack {
+  top: 725px;
+  left: 125px;
+  width: 50px;
+  height: 50px;
+}
+
+#btnHome {
+  top: 725px;
+  left: 55px;
+  width: 50px;
+  height: 50px;
+}
+
+/** Introduction **/
+.introduction {
+  color: #a8e5bd;
+  font-family: "Avenir";
+  font-size: 57px;
+}
+
+#overlayButton {
+  position: absolute;
+  top: 670px;
+  left: 655px;
+  width: 155px;
+  height: 75px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+}
+/** end Introduction **/
+
+/** Home **/
+.btnHome {
+  position: absolute;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#btnHomeClothing {
+  top: 305px;
+  left: 275px;
+  width: 445px;
+  height: 170px;
+}
+
+#btnHomeFood {
+  top: 305px;
+  left: 745px;
+  width: 445px;
+  height: 170px;
+}
+
+#btnHomeHousing {
+  top: 515px;
+  left: 275px;
+  width: 445px;
+  height: 170px;
+}
+
+#btnHomeTransportation {
+  top: 515px;
+  left: 745px;
+  width: 445px;
+  height: 170px;
+}
+/** end Home **/
+
+/** Case Studing **/
+.ClothingCaseOne {
+  top: 360px;
+  left: 465px;
+  width: 535px;
+  height: 120px;
+}
+
+.ClothingCaseTwo {
+  top: 510px;
+  left: 465px;
+  width: 535px;
+  height: 120px;
+}
+/** end Case Studing **/
+
+/** Case Studing One **/
+.ClothingCaseOneOne {
+  top: 395px;
+  left: 410px;
+  width: 645px;
+  height: 97px;
+}
+
+.ClothingCaseOneTwo {
+  top: 503px;
+  left: 410px;
+  width: 645px;
+  height: 97px;
+}
+
+.ClothingCaseOneThree {
+  top: 611px;
+  left: 410px;
+  width: 645px;
+  height: 97px;
+}
+/** end Case Studing **/
+
+/** Video Modal **/
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(255, 255, 255); /* Fallback color */
+  background-color: rgba(255, 255, 255, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #ffffff;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border-radius: 20px;
+  border: 0px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    bottom: 0;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.video-js {
+    width: 100%;
+}
+/** End Video Modal **/

@@ -3,76 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wave Effect with Three.js</title>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.ripples.js"></script>
-
-    <style>
-      body {
-        margin: 0;
-      }
-      canvas {
-        display: block;
-      }
-    </style>
-    <style>
-      .button {
-        position: absolute;
-        display: block;
-        background-color: rgba(
-          255,
-          255,
-          255,
-          0
-        ); /* for visualization, make it transparent */
-      }
-
-      #back {
-        top: 50px;
-        left: 120px;
-        width: 50px;
-        height: 50px;
-      }
-
-      #button1 {
-        top: 290px;
-        left: 65px;
-        width: 420px;
-        height: 340px;
-      }
-
-      #button2 {
-        top: 290px;
-        left: 520px;
-        width: 420px;
-        height: 340px;
-      }
-
-      #button3 {
-        top: 290px;
-        left: 980px;
-        width: 420px;
-        height: 340px;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div
       id="backgroundDiv"
       class="demo"
-      style="
-        position: relative;
-        background-image: url('image/cover.png');
-        background-size: cover;
-        height: 822px;
-        width: 1465px;
-      "
-    >
-      <a href="#" id="back" class="button" style="display: none"></a>
-      <a href="#" id="button1" class="button" style="display: none"></a>
-      <a href="#" id="button2" class="button" style="display: none"></a>
-      <a href="#" id="button3" class="button" style="display: none"></a>
-    </div>
+      style="background-image: url('image/cover.png')"
+    ></div>
     <script>
       $(document).ready(function () {
         try {
@@ -85,97 +25,9 @@
           $(".error").show().text(e);
         }
 
-        // Array of images
-        const images = [
-          "image/home.png",
-          // add more image paths here
-        ];
-        const imagesButton1 = [
-          "image/sub1.png",
-          // add more image paths for button1 here
-        ];
-
-        const imagesButton2 = [
-          "image/sub2.jpg",
-          // add more image paths for button2 here
-        ];
-
-        const imagesButton3 = [
-          "image/sub3.jpg",
-          // add more image paths for button3 here
-        ];
-
-        let currentIndexButton1 = -1;
-        let currentIndexButton2 = -1;
-        let currentIndexButton3 = -1;
-        let currentIndex = -1;
-
-        // Function to toggle button visibility based on background image
-        const toggleButtonsVisibility = (imageUrl) => {
-          if (imageUrl === "image/home.png") {
-            $(".button").show();
-          } else {
-            $(".button").hide();
-          }
-        };
-
         // Update this existing event listener for the main background div
-        $("#backgroundDiv").on("click", function (e) {
-          if ($(e.target).hasClass("button")) {
-            // Do not change the main background if a button was clicked
-            return;
-          }
-
-          currentIndex++;
-          if (currentIndex < images.length) {
-            $(this).ripples("hide");
-            const newImageUrl = images[currentIndex];
-            $(this).css("background-image", "url('" + newImageUrl + "')");
-            // $(this).ripples('set', 'imageUrl', newImageUrl);
-
-            toggleButtonsVisibility(newImageUrl);
-          }
-        });
-
-        // New individual event listeners for each button
-        /* $("#back").on("click", function () {
-          currentIndexButton1++;
-          if (currentIndexButton1 < images.length) {
-            const newImageUrl = images[currentIndexButton1];
-            $('#backgroundDiv').ripples('set', imageUrl, newImageUrl);
-          }
-          return false; // Prevent the click event from propagating to the parent div
-        }); */
-
-        // New individual event listeners for each button
-        $("#button1").on("click", function () {
-          currentIndexButton1++;
-          if (currentIndexButton1 < imagesButton1.length) {
-            const newImageUrl = imagesButton1[currentIndexButton1];
-            $('#backgroundDiv').css("background-image", "url(" + newImageUrl + ")");
-            toggleButtonsVisibility(newImageUrl);
-          }
-          return false; // Prevent the click event from propagating to the parent div
-        });
-
-        $("#button2").on("click", function () {
-          currentIndexButton2++;
-          if (currentIndexButton2 < imagesButton2.length) {
-            const newImageUrl = imagesButton2[currentIndexButton2];
-            $('#backgroundDiv').css("background-image", "url(" + newImageUrl + ")");
-            toggleButtonsVisibility(newImageUrl);
-          }
-          return false; // Prevent the click event from propagating to the parent div
-        });
-
-        $("#button3").on("click", function () {
-          currentIndexButton3++;
-          if (currentIndexButton3 < imagesButton3.length) {
-            const newImageUrl = imagesButton3[currentIndexButton3];
-            $('#backgroundDiv').css("background-image", "url(" + newImageUrl + ")");
-            toggleButtonsVisibility(newImageUrl);
-          }
-          return false; // Prevent the click event from propagating to the parent div
+        $("#backgroundDiv").click(function () {
+          window.location.href = "introduction.html";
         });
       });
     </script>
