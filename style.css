@@ -19,7 +19,7 @@ body {
 .button {
   position: absolute;
   display: block;
-  background-color: rgba(0, 255, 255, 0.5);
+  background-color: rgba(0, 255, 255, 0);
 }
 
 #backgroundDiv {
@@ -58,6 +58,7 @@ body {
   color: #a8e5bd;
   font-family: "Avenir";
   font-size: 57px;
+  text-align: center;
 }
 
 #overlayButton {
