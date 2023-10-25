@@ -1,0 +1,233 @@
+@font-face {
+  font-family: "Avenir";
+  src: url("fonts/H-Avenir-2.ttc") format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir LT";
+  src: url("fonts/Avenir-LT-Std-95-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir BLACK";
+  src: url("fonts/AVENIR-BLACK-3.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+}
+.button {
+  position: absolute;
+  display: block;
+  background-color: rgba(0, 255, 255, 0);
+}
+
+#backgroundDiv {
+  position: relative;
+  background-size: cover;
+  height: 822px;
+  width: 1465px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#back {
+  top: 50px;
+  left: 120px;
+  width: 50px;
+  height: 50px;
+}
+
+#btnBack {
+  top: 45px;
+  left: 125px;
+  width: 50px;
+  height: 50px;
+}
+
+#btnHome {
+  top: 45px;
+  left: 55px;
+  width: 50px;
+  height: 50px;
+}
+
+/** Introduction **/
+.introduction {
+  color: #a8e5bd;
+  font-family: "Avenir";
+  font-size: 40px;
+  text-align: center;
+}
+
+#overlayButton {
+  position: absolute;
+  top: 670px;
+  left: 655px;
+  width: 155px;
+  height: 75px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+}
+/** end Introduction **/
+
+/** Home **/
+.btnHome {
+  position: absolute;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#btnHomeStartups {
+  top: 385px;
+  left: 33px;
+  width: 442px;
+  height: 170px;
+}
+
+#btnHomeMentorship {
+  top: 385px;
+  left: 512px;
+  width: 442px;
+  height: 170px;
+}
+
+#btnHomeAlumni {
+  top: 385px;
+  left: 990px;
+  width: 442px;
+  height: 170px;
+}
+/** end Home **/
+
+/** button page **/
+.ButtonOne {
+  top: 487px;
+  left: 410px;
+  width: 645px;
+  height: 100px;
+}
+
+.ButtonTwo {
+  top: 595px;
+  left: 410px;
+  width: 645px;
+  height: 100px;
+}
+/** end button page **/
+
+/** button page **/
+.ThreeButtonOne {
+  top: 405px;
+  left: 415px;
+  width: 645px;
+  height: 100px;
+}
+
+.ThreeButtonTwo {
+  top: 515px;
+  left: 415px;
+  width: 645px;
+  height: 100px;
+}
+
+.ThreeButtonThree {
+  top: 625px;
+  left: 415px;
+  width: 645px;
+  height: 100px;
+}
+/** end button page **/
+
+.content{
+  padding: 50px 40px;
+}
+
+/** Video Modal **/
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 10%;
+  top: 10%;
+  width: 1465px; /* Full width */
+  height: 100%; /* Full height */
+  transform: translate(-10%, -10%);
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(255, 255, 255); /* Fallback color */
+  background-color: rgba(255, 255, 255, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content Box */
+.modal-content {
+  margin: 5% 5%; /* 15% from the top and centered */
+  padding: 20px;
+  border-radius: 20px;
+  border: 5px solid white;
+}
+
+/* The Close Button */
+/** Modal **/
+.close {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  width: 15px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.scrollable {
+  margin: 79px;
+  overflow-y: auto; /* This will allow vertical scrolling if content exceeds the height */
+  padding: 0px; /* Some spacing for the content */
+  max-height: 667px;
+}
+
+hr {
+  border: 1px solid white;
+}
+
+.btnClose {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5 30px;
+  display: inline-block;
+}
+
+/** End Modal **/
+
+/** Scrollbar **/
+/* The container */
+::-webkit-scrollbar {
+  width: 14px; /* Width of the vertical scrollbar */
+  height: 14px; /* Height of the horizontal scrollbar */
+}
+
+/* Handle or Thumb (the draggable scrolling part) */
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  border: 1px solid white;
+}
+
+/* Handle or Thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: white;
+}
+
+/* Track (the background of the scrollbar) */
+::-webkit-scrollbar-track {
+  border: 2px solid white;
+}
+
+/* Corner (where both scrollbars meet) */
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
