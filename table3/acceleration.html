@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="style.css" />
     <script>
       $(document).ready(function () {
-        var modal = $("#Modal");
+        var modal1 = $("#Modal1");
+        var modal2 = $("#Modal2");
+        var modal3 = $("#Modal3");
+        var modal4 = $("#Modal4");
         $("#btnHome").click(function () {
           window.location.href = "index.html";
         });
@@ -14,25 +17,37 @@
           history.back();
         });
         $(".btnClose").click(function () {
-          modal.hide();
+          modal1.hide();
+          modal2.hide();
+          modal3.hide();
+          modal4.hide();
         });
         $(".FourButtonOne").click(function () {
-          modal.show();
+          modal1.show();
         });
         $(".FourButtonTwo").click(function () {
-          modal.show();
+          modal2.show();
         });
         $(".FourButtonThree").click(function () {
-          modal.show();
+          modal3.show();
         });
         $(".FourButtonFour").click(function () {
-          modal.show();
+          modal4.show();
         });
 
         // When the user clicks anywhere outside of the modal, close it
         $(window).click(function (event) {
-          if ($(event.target).is(modal)) {
-            modal.hide();
+          if ($(event.target).is(modal1)) {
+            modal1.hide();
+          }
+          if ($(event.target).is(modal2)) {
+            modal2.hide();
+          }
+          if ($(event.target).is(modal3)) {
+            modal3.hide();
+          }
+          if ($(event.target).is(modal4)) {
+            modal4.hide();
           }
         });
       });
@@ -52,153 +67,105 @@
       <div class="button" id="btnBack"></div>
 
       <!-- The Modal -->
-      <div id="Modal" class="modal">
+      <div id="Modal1" class="modal">
         <!-- Modal content -->
-        <div class="modal-content" style="background-color: #66655f;">
-          <div class="btnClose close"><img src="image/back.svg" /></div>
+        <div class="modal-content" style="background-color: #66655f">
+          <div class="btnClose">
+            <img class="icon-back" src="image/back.svg" />
+          </div>
           <hr />
           <div class="scrollable">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit. ...Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit. ...Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit. ...Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. ...
-            <!-- Repeat the above line multiple times or use other lengthy content -->
+            <div class="scrollable-content">
+              <h2 class="title">What Will Acceleration Programme Give You?</h2>
+              <p>
+                Embarking on a startup journey? Let us be your guiding light,
+                providing comprehensive support to empower, expand, and excel.
+              </p>
+              <p>
+                Secure up to HK$4.8 million in milestone-based funding tailored
+                to your needs. As well, consult with a domain specialist who can
+                help you navigate the financial landscape and expand your
+                horizons regionally and globally.
+              </p>
+              <p>
+                With a network and professional services, the largest startup
+                ecosystem is an excellent foundation for your company to
+                accelerate to the next stage.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Modal2" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content" style="background-color: #66655f">
+          <div class="btnClose">
+            <img class="icon-back" src="image/back.svg" />
+          </div>
+          <hr />
+          <div class="scrollable">
+            <div class="scrollable-content">
+              <h2 class="title">Is Acceleration Programme Right for You?</h2>
+              <p>
+                If your startup possesses innovative technology,
+                ready-for-market products, and a scalable business model, then
+                the Acceleration Programme is tailor-made for you. Join forces
+                with a passionate team of like-minded individuals who share your
+                drive for success.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="Modal3" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content" style="background-color: #66655f">
+          <div class="btnClose">
+            <img class="icon-back" src="image/back.svg" />
+          </div>
+          <hr />
+          <div class="scrollable">
+            <div class="scrollable-content">
+              <h2 class="title">
+                How Do You Apply for Acceleration Programme?
+              </h2>
+              <p>
+                Ensure you meet all the admission criteria before submitting
+                your application to unlock the path to startup success:
+              </p>
+              <p>
+                1. Are a growth-stage company looking to scale globally<br />
+                2. Are current incubation company or a tenant of HKSTP<br />
+                *if you are not currently based in HKSTPC premises, shall obtain
+                qualification approval for moving into HKSTP premises within 6
+                months from the date of admission.<br />
+                3. Have headquarters, executive functions and a corporate CEO
+                based in Hong Kong<br />
+                4. Have less than 100 employees<br />
+                5. Have at least 50% of full-time staff members based in Hong
+                Kong engaging in technology-related work
+              </p>
+              <p>
+                Submit your application form with a company deck to
+                acceleration@hkstp.org.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="Modal4" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content" style="background-color: #66655f">
+          <div class="btnClose">
+            <img class="icon-back" src="image/back.svg" />
+          </div>
+          <hr />
+          <div class="scrollable">
+            <div class="scrollable-content">
+              <h2 class="title">Programme Startups Directory</h2>
+              <p>xxxxxxxxxxxxxx</p>
+            </div>
           </div>
         </div>
       </div>
