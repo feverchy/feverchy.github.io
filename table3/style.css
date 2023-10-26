@@ -19,7 +19,7 @@ body {
 .button {
   position: absolute;
   display: block;
-  background-color: rgba(0, 255, 255, 0.5);
+  background-color: rgba(0, 255, 255, 0);
 }
 
 #backgroundDiv {
@@ -60,11 +60,11 @@ body {
   text-align: center;
 }
 
-.content{
+.content {
   padding: 10vh;
 }
 
-.intro-title{
+.intro-title {
   display: block;
   color: #a8e5bd;
   font-family: "Avenir LT";
@@ -72,7 +72,7 @@ body {
   font-size: 5rem;
 }
 
-.intro-content{
+.intro-content {
   display: block;
   font-family: "Avenir";
   color: white;
@@ -86,7 +86,7 @@ body {
   width: 10vw;
   height: 10vh;
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0);
 }
 /** end Introduction **/
 
@@ -94,7 +94,7 @@ body {
 .btnHome {
   position: absolute;
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0);
 }
 
 #btnHomeIdeation {
@@ -168,7 +168,7 @@ body {
   height: 100%; /* Full height */
   transform: translate(-10%, -10%);
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(255, 255, 255, 0.4); /* Black w/ opacity */
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 /* Modal Content Box */
@@ -189,7 +189,7 @@ body {
   cursor: pointer;
 }
 
-.icon-back{
+.icon-back {
   width: 1.5rem;
 }
 
@@ -200,19 +200,19 @@ body {
   height: 68vh;
 }
 
-.scrollable-content{
+.scrollable-content {
   color: white;
   font-size: 1.5rem;
 }
 
-.scrollable-content .title{
-  font-family: 'Avenir LT';
+.scrollable-content .title {
+  font-family: "Avenir LT";
   font-size: 4rem;
   margin: 0;
 }
 
-.scrollable-content p{
-  font-family: 'Avenir';
+.scrollable-content p {
+  font-family: "Avenir";
   font-size: 2rem;
 }
 
@@ -223,7 +223,7 @@ hr {
 .btnClose {
   border: 1px solid white;
   border-radius: 0.6rem;
-  padding: .5rem 2.2rem;
+  padding: 0.5rem 2.2rem;
   display: inline-block;
 }
 
