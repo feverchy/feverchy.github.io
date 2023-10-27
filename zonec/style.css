@@ -25,11 +25,10 @@ body {
 #backgroundDiv {
   position: relative;
   background-size: cover;
-  height: 822px;
-  width: 1465px;
+  background-repeat: no-repeat;
+  width: 100vw; /* Set the width to 100% of the viewport width */
+  height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 #back {
@@ -40,33 +39,33 @@ body {
 }
 
 #btnBack {
-  top: 45px;
-  left: 125px;
-  width: 50px;
-  height: 50px;
+  top: 5vh;
+  left: 8vw;
+  width: 5vw;
+  height: 7vh;
 }
 
 #btnHome {
-  top: 45px;
-  left: 55px;
-  width: 50px;
-  height: 50px;
+  top: 5vh;
+  left: 3vw;
+  width: 5vw;
+  height: 7vh;
 }
 
 /** Introduction **/
 .introduction {
   color: #a8e5bd;
   font-family: "Avenir";
-  font-size: 40px;
+  font-size: 57px;
   text-align: center;
 }
 
 #overlayButton {
   position: absolute;
-  top: 670px;
-  left: 655px;
-  width: 155px;
-  height: 75px;
+  top: 81vh;
+  left: 45vw;
+  width: 10vw;
+  height: 10vh;
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0);
 }
@@ -80,24 +79,24 @@ body {
 }
 
 #btnHomeStartups {
-  top: 385px;
-  left: 33px;
-  width: 442px;
-  height: 170px;
+  top: 47vh;
+  left: 2vw;
+  width: 31vw;
+  height: 20vh;
 }
 
 #btnHomeMentorship {
-  top: 385px;
-  left: 512px;
-  width: 442px;
-  height: 170px;
+  top: 47vh;
+  left: 35vw;
+  width: 31vw;
+  height: 20vh;
 }
 
 #btnHomeAlumni {
-  top: 385px;
-  left: 990px;
-  width: 442px;
-  height: 170px;
+  top: 47vh;
+  left: 67vw;
+  width: 31vw;
+  height: 20vh;
 }
 /** end Home **/
 
