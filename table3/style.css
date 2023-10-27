@@ -69,14 +69,14 @@ body {
   color: #a8e5bd;
   font-family: "Avenir LT";
   text-transform: uppercase;
-  font-size: 5rem;
+  font-size: 8rem;
 }
 
 .intro-content {
   display: block;
   font-family: "Avenir";
   color: white;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 #overlayButton {
@@ -129,29 +129,29 @@ body {
 /** Four button page **/
 .FourButtonOne {
   top: 43vh;
-  left: 29vw;
-  width: 42vw;
+  left: 29.5vw;
+  width: 42.5vw;
   height: 11vh;
 }
 
 .FourButtonTwo {
   top: 55vh;
-  left: 29vw;
-  width: 42vw;
+  left: 29.5vw;
+  width: 42.5vw;
   height: 11vh;
 }
 
 .FourButtonThree {
   top: 68vh;
-  left: 29vw;
-  width: 42vw;
+  left: 29.5vw;
+  width: 42.5vw;
   height: 11vh;
 }
 
 .FourButtonFour {
   top: 80vh;
-  left: 29vw;
-  width: 42vw;
+  left: 29.5vw;
+  width: 42.5vw;
   height: 11vh;
 }
 /** end four button page **/
