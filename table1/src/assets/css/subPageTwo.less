@@ -1,0 +1,78 @@
+*{position:relative;}
+.box(@w,@h:100%,@b:transparent){width:@w;height:@h;background:@b}
+.subPageTwo{@apply min-w-full;height:100vh;padding:70px;padding-bottom:100px;padding-top:112.5px;
+    .backgImg{position:absolute;top:0;left:0;.box(100%,100%);}
+    .conBox{.box(100%,100%);@apply flex items-start justify-center;
+        .leftBox{.box(160px,95%);border:5px solid #fff;border-right:none;border-bottom:none;}
+        .rightBox{height:100%;@apply flex-1;border:5px solid #fff;border-left:none;}
+        .btnBox{.box(190px,55px);@apply flex items-center justify-between;position:absolute;top:-70px;right:-30px;
+            .el-button{width:80px;height:100%;
+                span{font-size:32px;color:#00425C;}
+            }
+            .el-button.hover{
+                span{font-weight:700;}
+            }
+        }
+        .btnBoxTwo{.box(160px,55px);@apply flex items-center justify-between;position:absolute;bottom:-20px;left:-30px;
+            img{width:68px;}
+            img:hover{opacity:0.9;}
+        }
+        .el-scrollbar{width:100%;position:absolute;padding:60px 50px;
+            .title{font-size:70px;color:#fff;font-weight:700;}
+            .conTitle{font-size:60px;color:#fff;margin-top:10px;padding-left:50px;
+                span{position:absolute;height:100%;top:0;left:0;}
+            }
+            .content{width:100%;
+                .text{font-size:60px;color:#fff;margin-top:10px;padding-left:50px;}
+            }
+        }
+    }
+} 
+.subPageTwo.CLOTHING{background:#fdb137;
+    .conBox{
+        .content{
+            .title{color:#FDB137;}
+            .caseBox{color:#FDB137;
+                .case{
+                    .caseCon{border-color:#FDB137;}
+                }
+            }
+        }
+    }
+}
+.subPageTwo.FOOD{background:#f36648;
+    .conBox{
+        .content{
+            .title{color:#f36648;}
+            .caseBox{color:#f36648;
+                .case{
+                    .caseCon{border-color:#f36648;}
+                }
+            }
+        }
+    }
+}
+.subPageTwo.HOUSING{background:#f197a1;
+    .conBox{
+        .content{
+            .title{color:#f197a1;}
+            .caseBox{color:#f197a1;
+                .case{
+                    .caseCon{border-color:#f197a1;}
+                }
+            }
+        }
+    }
+}
+.subPageTwo.TRANSPORTATION{background:#4152a4;
+    .conBox{
+        .content{
+            .title{color:#4152a4;}
+            .caseBox{color:#4152a4;
+                .case{
+                    .caseCon{border-color:#4152a4;}
+                }
+            }
+        }
+    }
+}
