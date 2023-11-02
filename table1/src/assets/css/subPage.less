@@ -4,7 +4,7 @@
     .backgImg{position:absolute;top:0;left:0;.box(100%,100%);}
     .conBox{.box(100%,100%);@apply flex items-center justify-center flex-col;
         .btnBox{.box(190px,55px);@apply flex items-center justify-between;position:absolute;top:-27.5px;right:-30px;
-            .el-button{width:80px;height:100%;
+            .el-button{width:80px;height:100%;background:#fff;border:none;
                 span{font-size:32px;color:#00425C;}
             }
             .el-button.hover{
@@ -45,6 +45,11 @@
                 }
             }
         }
+        .btnBox{
+            .el-button{
+                span{color:#FDB137;}
+            }
+        }
     }
 }
 .subPage.FOOD{background:#f36648;
@@ -55,6 +60,11 @@
                 .case{
                     .caseCon{border-color:#f36648;}
                 }
+            }
+        }
+        .btnBox{
+            .el-button{
+                span{color:#f36648;}
             }
         }
     }
@@ -69,16 +79,26 @@
                 }
             }
         }
+        .btnBox{
+            .el-button{
+                span{color:#f197a1;}
+            }
+        }
     }
 }
 .subPage.TRANSPORTATION{background:#4152a4;
     .conBox{
         .content{
-            .title{color:#4152a4;}
+            .title{color:#4152a4;font-size:120px;}
             .caseBox{color:#4152a4;
                 .case{
                     .caseCon{border-color:#4152a4;}
                 }
+            }
+        }
+        .btnBox{
+            .el-button{
+                span{color:#4152a4;}
             }
         }
     }

@@ -1,0 +1,31 @@
+*{position:relative;}
+.box(@w,@h:100%,@b:transparent){width:@w;height:@h;background:@b}
+.HomePage{@apply min-w-full;height:100vh;background:#00425C;padding:70px;padding-bottom:140px;
+    .backgImg{position:absolute;top:0;left:0;.box(100%,100%);}
+    .conBox{.box(100%,100%);@apply flex items-center justify-start flex-col;
+        .btnBox{.box(190px,55px);@apply flex items-center justify-between;position:absolute;bottom:-90px;left:0;
+            .el-button{width:80px;height:100%;
+                span{font-size:32px;color:#00425C;}
+            }
+            .el-button.hover{
+                span{font-weight:700;}
+            }
+        }
+        .titleBox{width:705px;margin-top:27.5px;}
+        .buttonBox{.box(1806px,500px);margin-top:90px;@apply flex flex-wrap justify-between items-stretch;
+            .btn{.box(582px,226px);background-size:100% 100%;font-size:50px;
+                .text{.box(65%,100%);@apply flex items-center justify-center;font-weight:700;text-shadow:2px 2px 2px #000;text-align:center;line-height:1;}
+                .text.hover{font-size:40px;}
+            }
+            .btn.clothing{background:url(../images/home_btn_backg_clothing.png) no-repeat center center;
+                .text{color:#42497c;}
+            }
+            .btn.food{background:url(../images/home_btn_backg_food.png) no-repeat center center;
+                .text{color:#6c79db;}
+            }
+            .btn.housing{background:url(../images/home_btn_backg_housing.png) no-repeat center center;
+                .text{color:#99d8f5;}
+            }
+        }
+    }
+} 

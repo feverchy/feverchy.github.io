@@ -15,7 +15,7 @@
             </div>
             <div class="btnBox">
                 <el-button :class="isChinese?'hover':''" @click="isChinese=true">中</el-button>
-                <el-button :class="isChinese?'':'hover'" @click="isChinese=false">Eng</el-button>
+                <el-button :class="isChinese?'':'hover'" @click="isChinese=false">ENG</el-button>
             </div>
             <el-button class="bottomBtn" @click="router.push('/Home')"><el-icon><ArrowRight /></el-icon></el-button>
         </div>

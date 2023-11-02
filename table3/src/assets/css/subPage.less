@@ -1,0 +1,148 @@
+*{position:relative;}
+.box(@w,@h:100%,@b:transparent){width:@w;height:@h;background:@b}
+.subPage{@apply min-w-full;height:100vh;padding:70px;padding-bottom:140px;
+    .backgImg{position:absolute;top:0;left:0;.box(100%,100%);}
+    .conBox{.box(100%,100%);@apply flex items-center justify-center flex-col;
+        .btnBox{.box(190px,55px);@apply flex items-center justify-between;position:absolute;bottom:-90px;left:0;
+            .el-button{width:80px;height:100%;background:#fff;border:none;
+                span{font-size:32px;color:#00425C;}
+            }
+            .el-button.hover{
+                span{font-weight:700;}
+            }
+        }
+        .btnBoxTwo{.box(160px,55px);@apply flex items-center justify-between;position:absolute;top:-20px;left:0;
+            img{width:68px;}
+            img:hover{opacity:0.9;}
+        }
+        .content{.box(100%,100%);@apply flex items-center justify-center flex-col;
+            .title{font-size:164px;font-weight:700;line-height:1;}
+            // .title.hover{font-size:300px;}
+            .caseBox{margin-top:70px;
+                .case{.box(700px,154px);border-radius:77px;box-shadow:0px 0px 5px 2px #888888;margin-top:20px;padding:10px;
+                    .caseCon{.box(100%,100%);border:1px solid #000;border-radius:67px;@apply flex items-center justify-center flex-col;
+                        p{line-height:1;font-weight:700;}
+                        .text{font-size:50px;}
+                        .textTwo{font-size:37px;}
+                    }
+                }
+            }
+            .caseBox.hover{
+                .case{.box(842px,124px);border-radius:62px;
+                    .caseCon{border-radius:52px;}
+                }
+            }
+        }   
+    }
+    .qrCodeBox{@apply flex items-end;position:absolute;bottom:50px;right:45px;
+        .leftText{text-align:right;color:#fff;font-size:37px;line-height:1;
+            p{font-weight:600;}
+        }
+        img{width:150px;margin-left:15px;}
+    }
+    .layerBox{.box(100%,100%,rgba(255,255,255,.5));position:fixed;top:0;left:0;
+        .popBox{.box(1680px,840px,#fff);border-radius:20px;position:absolute;top:0;left:0;bottom:0;right:0;margin:auto;box-shadow:0px 0px 5px 2px #888888;padding:8px;
+            .popConBox{.box(100%,100%);border-radius:18px;padding:0 25px;padding-bottom:25px;
+                .topBox{.box(100%,140px);@apply flex items-center;
+                    .bottomBtn{.box(160px,75px);border:none;border:3px solid #fff;
+                        .el-icon{color:#fff;font-size:70px;}
+                    }
+                }
+                .el-divider{height:5px;background:#fff;}
+                .el-scrollbar{width:100%;
+                    .title{font-size:70px;font-weight:700;color:#fff;}
+                    .popText{font-size:50px;color:#fff;padding-left:50px;margin-top:60px;}
+                    .popText:nth-child(2){margin-top:0;}
+                }
+            }
+        }
+    }
+}
+.subPage.CLOTHING{background:#ffd33c;
+    .conBox{
+        .content{
+            .title{color:#ffd33c;}
+            .caseBox{color:#fdb137;
+                .case{
+                    .caseCon{border-color:#ffd33c;}
+                }
+            }
+        }
+        .btnBox{
+            .el-button{
+                span{color:#fdb137;}
+            }
+        }
+    }
+    .layerBox{
+        .popBox{
+            .popConBox{background:#ffd33c;}
+        }
+    }
+}
+.subPage.FOOD{background:#a4ce4e;
+    .conBox{
+        .content{
+            .title{color:#a4ce4e;}
+            .caseBox{color:#a4ce4e;
+                .case{
+                    .caseCon{border-color:#a4ce4e;}
+                }
+            }
+        }
+        .btnBox{
+            .el-button{
+                span{color:#a4ce4e;}
+            }
+        }
+    }
+    .layerBox{
+        .popBox{
+            .popConBox{background:#a4ce4e;}
+        }
+    }
+}
+.subPage.HOUSING{background:#b8b7ab;
+    .conBox{
+        .content{
+            .title{color:#b8b7ab;font-size:120px;}
+            .caseBox{color:#b8b7ab;
+                .case{
+                    .caseCon{border-color:#b8b7ab;}
+                }
+            }
+        }
+        .btnBox{
+            .el-button{
+                span{color:#b8b7ab;}
+            }
+        }
+    }
+    .layerBox{
+        .popBox{
+            .popConBox{background:#b8b7ab;}
+        }
+    }
+}
+.subPage.TRANSPORTATION{background:#423b64;
+    .conBox{
+        .content{
+            .title{color:#423b64;font-size:120px;}
+            .caseBox{color:#423b64;
+                .case{
+                    .caseCon{border-color:#423b64;}
+                }
+            }
+        }
+        .btnBox{
+            .el-button{
+                span{color:#423b64;}
+            }
+        }
+    }
+    .layerBox{
+        .popBox{
+            .popConBox{background:#423b64;}
+        }
+    }
+}

@@ -6,7 +6,7 @@
         .leftBox{.box(160px,95%);border:5px solid #fff;border-right:none;border-bottom:none;}
         .rightBox{height:100%;@apply flex-1;border:5px solid #fff;border-left:none;}
         .btnBox{.box(190px,55px);@apply flex items-center justify-between;position:absolute;top:-70px;right:-30px;
-            .el-button{width:80px;height:100%;
+            .el-button{width:80px;height:100%;background:#fff;border:none;
                 span{font-size:32px;color:#00425C;}
             }
             .el-button.hover{
@@ -27,6 +27,23 @@
             }
         }
     }
+    .layerBox{.box(100%,100%,rgba(255,255,255,.5));position:fixed;top:0;left:0;
+        .popBox{.box(1400px,800px,#fff);border-radius:20px;position:absolute;top:0;left:0;bottom:0;right:0;margin:auto;box-shadow:0px 0px 5px 2px #888888;padding:20px;
+            .popConBox{.box(100%,100%);}
+            .el-icon{.box(80px,80px,#fff);border-radius:50%;box-shadow:0px 0px 5px 2px #888888;position:absolute;bottom:-25px;right:-25px;@apply flex items-center justify-center;font-size:70px;}
+            .bottomPop{.box(100%,140px,rgba(255,255,255,.5));position:absolute;bottom:0;left:0;color:#fff;font-size:24px;padding:10px;}
+            .el-carousel{.box(100%,100%);
+                .el-carousel__container{.box(100%,100%);}
+                .el-carousel-item{.box(100%,100%);}
+                img{width:100%;}
+                .el-carousel__indicators{height:40px;background:rgba(255,255,255,.8);border-radius:20px;bottom:20px;padding:0 20px;@apply flex items-center;
+                    .el-carousel__indicator{
+                        .el-carousel__button{.box(15px,15px,#fff);border-radius:50%;}
+                    }
+                }
+            }
+        }
+    }
 } 
 .subPageTwo.CLOTHING{background:#fdb137;
     .conBox{
@@ -35,6 +52,24 @@
             .caseBox{color:#FDB137;
                 .case{
                     .caseCon{border-color:#FDB137;}
+                }
+            }
+        }
+        .btnBox{
+            .el-button{
+                span{color:#FDB137;}
+            }
+        }
+    }
+    .layerBox{
+        .popBox{
+            .popConBox{background:#FDB137;}
+            .el-icon{color:#FDB137;}
+            .el-carousel{
+                .el-carousel__indicators{
+                    .el-carousel__indicator{
+                        .el-carousel__button.is-active{background:#FDB137;}
+                    }
                 }
             }
         }
@@ -50,6 +85,24 @@
                 }
             }
         }
+        .btnBox{
+            .el-button{
+                span{color:#f36648;}
+            }
+        }
+    }
+    .layerBox{
+        .popBox{
+            .popConBox{background:#f36648;}
+            .el-icon{color:#f36648;}
+            .el-carousel{
+                .el-carousel__indicators{
+                    .el-carousel__indicator.is-active{
+                        .el-carousel__button{background:#f36648;}
+                    }
+                }
+            }
+        }
     }
 }
 .subPageTwo.HOUSING{background:#f197a1;
@@ -62,6 +115,24 @@
                 }
             }
         }
+        .btnBox{
+            .el-button{
+                span{color:#f197a1;}
+            }
+        }
+    }
+    .layerBox{
+        .popBox{
+            .popConBox{background:#f197a1;}
+            .el-icon{color:#f197a1;}
+            .el-carousel{
+                .el-carousel__indicators{
+                    .el-carousel__indicator.is-active{
+                        .el-carousel__button{background:#f197a1;}
+                    }
+                }
+            }
+        }
     }
 }
 .subPageTwo.TRANSPORTATION{background:#4152a4;
@@ -71,6 +142,24 @@
             .caseBox{color:#4152a4;
                 .case{
                     .caseCon{border-color:#4152a4;}
+                }
+            }
+        }
+        .btnBox{
+            .el-button{
+                span{color:#4152a4;}
+            }
+        }
+    }
+    .layerBox{
+        .popBox{
+            .popConBox{background:#4152a4;}
+            .el-icon{color:#4152a4;}
+            .el-carousel{
+                .el-carousel__indicators{
+                    .el-carousel__indicator.is-active{
+                        .el-carousel__button{background:#4152a4;}
+                    }
                 }
             }
         }

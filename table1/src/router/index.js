@@ -5,6 +5,7 @@ import Introduction from "~/pages/Introduction.vue"//Introduction Page
 import Home from "~/pages/Home.vue"//Home Page
 import subPage from "~/pages/subPage.vue"//subPage
 import subPageTwo from "~/pages/subPageTwo.vue"//subPageTwo
+import subPageThree from "~/pages/subPageThree.vue"//subPageThree
 
 //路由配置
 const routes = [
@@ -32,6 +33,11 @@ const routes = [
         path: "/subPageTwo",
         name: "subPageTwo",
         component: subPageTwo,
+    },
+    {
+        path: "/subPageThree",
+        name: "subPageThree",
+        component: subPageThree,
     },
 ]
 

@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "Avenir";
+    src: url("../fonts/H-Avenir-2.ttc") format("truetype");
+}
+
+@font-face {
+    font-family: "Avenir LT";
+    src: url("../fonts/Avenir-LT-Std-95-Black.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Avenir BLACK";
+    src: url("../fonts/AVENIR-BLACK-3.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Acumin Variable Concept";
+    src: url("../fonts/AcuminVariableConcept.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "KozGoPr6N Regular";
+    src: url("../fonts/KozGoPr6N-Regular.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "Xolonium Regular";
+    src: url("../fonts/Xolonium-Regular.ttf") format("truetype");
+}
+
+/* 定义字体类 */
+.font-avenir {
+    font-family: 'Avenir';
+}
+
+.font-avenir-lt {
+    font-family: 'Avenir LT';
+}
+
+.font-avenir-black {
+    font-family: 'Avenir BLACK';
+}
+
+.font-Acumin-Variable-Concept {
+    font-family: 'Acumin Variable Concept';
+}
+
+.font-KozGoPr6N-Regular {
+    font-family: 'KozGoPr6N Regular';
+}
+
+.font-Xolonium-Regular {
+    font-family: 'Xolonium Regular';
+}
