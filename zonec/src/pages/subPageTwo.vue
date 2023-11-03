@@ -23,7 +23,7 @@
                 <img class="cursorPointer" src="../assets/images/icon_button_home.png" alt="" @click="router.push('/Home')"> 
                 <img class="cursorPointer" src="../assets/images/icon_button_return.png" alt="" @click="router.back()">
             </div>
-            <div class="btnPhoto cursorPointer" @click="isPop=true">
+            <div class="btnPhoto cursorPointer" @click="isPop=true" v-if="type!=1">
                 <el-icon><PictureFilled /></el-icon>
                 Photo
             </div>
@@ -46,7 +46,7 @@
 </template>
 <script setup>
     import InnOcircle from '../assets/images/InnOcircle.jpg'
-    import TipsyThursday from '../assets/images/TipsyThursday.jpg'
+    import TipsyThursday from '../assets/images/Alumni.jpg'
     import DAO from '../assets/images/DAO.jpeg'
     import Christmasparty from '../assets/images/Christmasparty.jpg'
     import basketballmatch from '../assets/images/basketballmatch.jpg'

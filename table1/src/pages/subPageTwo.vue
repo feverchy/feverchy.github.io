@@ -17,7 +17,7 @@
                                 <template v-else>The rise of fast fashion, characterized by the rapid production and consumption of low-cost clothing, has exacerbated the problem of clothing waste <span class="cursorPointer" @click="initialIndex=0, isPop=true">(Image 1)</span>.</template>
                             </div>
                             <div class="text">{{isChinese ? '據一所世界知名保育組織的統計，每年約有1,700萬噸的紡織廢料最終被棄置在垃圾堆填區，相當於6,800個50米游泳池的體積。' : 'According to a world respected conservation organization, approximately 17 million tons of textile waste end up in landfills each year, equivalent to 6,800 50-meter swimming pools.'}}</div>
-                            <div class="text">(Source: https://www.roadrunnerwm.com/blog/textile-waste-environmental-crisis)</div>
+                            <div class="text" v-if="!isChinese">(Source: https://www.roadrunnerwm.com/blog/textile-waste-environmental-crisis)</div>
                         </div>
                         <div class="conTitle"><span class="cursorPointer" @click="isShowTwo ? isShowTwo=false : isShowTwo=true">{{isShowTwo ? '-':'+'}}</span>{{isChinese ? '合成纖維對海洋健康的影響' : "Synthetic textiles' impact on ocean health"}}</div>
                         <div class="content" v-if="isShowTwo">
@@ -25,12 +25,18 @@
                                 <template v-if="isChinese">
                                     根據一所保護自然和促進可持續發展的全球組織於2017年的報告指出，大約35％的海洋微塑料污染
                                     <span class="cursorPointer" @click="initialIndex=1,isPop=true">（圖2）</span>
-                                    是由於合成纖維在洗滌過程中釋放的微纖維所致。（來源：Primary Microplastics in the Oceans: A Global Evaluation of Sources.- IUCN 2017）
+                                    是由於合成纖維在洗滌過程中釋放的微纖維所致。
                                 </template>
                                 <template v-else>
                                     A global organization dedicated to conserving nature and promoting sustainable development issued a report in 2017 stating that around 35% of microplastic pollution
                                     <span class="cursorPointer" @click="initialIndex=1,isPop=true"> (Image 2) </span>
-                                    in the oceans is attributed to synthetic textiles shedding microfibers during washing. (Source: Primary Microplastics in the Oceans: A Global Evaluation of Sources.- IUCN 2017)(https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/textiles-material-specific-data)
+                                    in the oceans is attributed to synthetic textiles shedding microfibers during washing. 
+                                </template>
+                            </div>
+                            <div class="text">
+                                <template v-if="isChinese">（來源：Primary Microplastics in the Oceans: A Global Evaluation of Sources.- IUCN 2017）
+                                </template>
+                                <template v-else>(Source: Primary Microplastics in the Oceans: A Global Evaluation of Sources.- IUCN 2017)(https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/textiles-material-specific-data)
                                 </template>
                             </div>
                         </div>
@@ -66,6 +72,7 @@
                                     The production of Piñatex and Mylo involves fewer chemicals, water, and energy consumption, reducing strains on ecosystems <span class="cursorPointer" @click="initialIndex=0,isPop=true">(Image 1)</span>.
                                 </template>
                             </div>
+                            <div class="text" v-if="!isChinese">These plant-based materials are biodegradable and can be returned to the environment after their lifecycle is complete.</div>
                         </div>
                     </div>
                 </div>
@@ -239,7 +246,7 @@
 <script setup>
     import img1 from '../assets/images/Clothing_Case1_Worldproblem_Image2.jpg'
     import img2 from '../assets/images/Clothing_Case1_Worldproblem_Image2.png'
-    import img3 from '../assets/images/Clothing_Case1_Innovator_Image2.jpg'
+    import img3 from '../assets/images/Clothing_Case1_Innovator_Image1.jpg'
     import img4 from '../assets/images/Clothing_Case1_Innovator_Image2.jpg'
     import img5 from '../assets/images/3 - Effects to the world - Image 1.png'
     import img6 from '../assets/images/Food_Case1_Worldproblem_Image1.jpg'
