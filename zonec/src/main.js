@@ -10,6 +10,7 @@ import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 import App from './App.vue'
 import router from './router'
 import store from '~/store'
+import './assets/js/rem.js'// 引入rem.js
 
 const app = createApp(App)//创建vue实例
 

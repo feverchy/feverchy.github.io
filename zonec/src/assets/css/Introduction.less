@@ -1,11 +1,11 @@
 *{position:relative;}
 .box(@w,@h:100%,@b:transparent){width:@w;height:@h;background:@b}
-.IntroductionPage{@apply min-w-full;height:100vh;background:#00425C;padding:70px;padding-bottom:140px;
+.IntroductionPage{@apply min-w-full;height:100vh;background:#00425C;padding:0.7rem;padding-bottom:1.4rem;overflow:hidden;
     .backgImg{position:absolute;top:0;left:0;.box(100%,100%);}
-    .conBox{.box(100%,100%);border:5px solid #EEA6C5;padding:70px 90px;
-        .btnBox{.box(190px,55px);@apply flex items-center justify-between;position:absolute;bottom:-90px;left:0;
-            .el-button{width:80px;height:100%;
-                span{font-size:32px;color:#00425C;}
+    .conBox{.box(100%,100%);border:0.05rem solid #EEA6C5;padding:0.7rem 0.9rem;
+        .btnBox{.box(1.9rem,0.55rem);@apply flex items-center justify-between;position:absolute;bottom:-0.9rem;left:0;
+            .el-button{width:0.8rem;height:100%;
+                span{font-size:0.32rem;color:#00425C;}
             }
             .el-button.hover{
                 span{font-weight:700;}
@@ -13,11 +13,11 @@
         }
         .textBox{.box(100%,100%);@apply flex items-center justify-center;position:absolute;top:0;left:0;
             div{text-align:center;
-                p{font-size:57px;color:#A8E5BD;}
+                p{font-size:0.57rem;color:#A8E5BD;}
             }
         }
-        .bottomBtn{.box(200px,95px,#EEA6C5);position:absolute;bottom:-47.5px;left:0;right:0;margin:0 auto;border:none;@apply shadow-2xl;
-            .el-icon{color:#006B93;font-size:90px;}
+        .bottomBtn{.box(2rem,0.95rem,#EEA6C5);position:absolute;bottom:-0.475rem;left:0;right:0;margin:0 auto;border:none;@apply shadow-2xl;
+            .el-icon{color:#006B93;font-size:0.9rem;}
         }
     }
 }

@@ -1,44 +1,44 @@
 *{position:relative;}
 .box(@w,@h:100%,@b:transparent){width:@w;height:@h;background:@b}
-.subPage{@apply min-w-full;height:100vh;padding:70px;padding-bottom:140px;
+.subPage{@apply min-w-full;height:100vh;padding:.7rem;padding-bottom:1.4rem;overflow:hidden;
     .backgImg{position:absolute;top:0;left:0;.box(100%,100%);}
     .conBox{.box(100%,100%);@apply flex items-center justify-center flex-col;
-        .btnBox{.box(190px,55px);@apply flex items-center justify-between;position:absolute;bottom:-90px;left:0;
-            .el-button{width:80px;height:100%;background:#fff;border:none;
-                span{font-size:32px;color:#00425C;}
+        .btnBox{.box(1.9rem,.55rem);@apply flex items-center justify-between;position:absolute;bottom:-.9rem;left:0;
+            .el-button{width:.8rem;height:100%;background:#fff;border:none;
+                span{font-size:.32rem;color:#00425C;}
             }
             .el-button.hover{
                 span{font-weight:700;}
             }
         }
-        .btnBoxTwo{.box(160px,55px);@apply flex items-center justify-between;position:absolute;top:-20px;left:0;
-            img{width:68px;}
+        .btnBoxTwo{.box(1.6rem,.55rem);@apply flex items-center justify-between;position:absolute;top:-.2rem;left:0;
+            img{width:.68rem;}
             img:hover{opacity:0.9;}
         }
         .content{.box(100%,100%);@apply flex items-center justify-center flex-col;
-            .title{font-size:155px;font-weight:700;line-height:1;text-align:center;}
+            .title{font-size:1.55rem;font-weight:700;line-height:1;text-align:center;}
             // .title.hover{font-size:300px;}
-            .caseBox{margin-top:70px;
-                .case{.box(700px,154px);border-radius:77px;box-shadow:0px 0px 5px 2px #888888;margin-top:20px;padding:10px;
-                    .caseCon{.box(100%,100%);border:1px solid #000;border-radius:67px;@apply flex items-center justify-center flex-col;
+            .caseBox{margin-top:.7rem;
+                .case{.box(7rem,1.54rem);border-radius:.77rem;box-shadow:0 0 .05rem .02rem #888888;margin-top:.2rem;padding:.1rem;
+                    .caseCon{.box(100%,100%);border:1px solid #000;border-radius:.67rem;@apply flex items-center justify-center flex-col;
                         p{line-height:1;font-weight:700;}
-                        .text{font-size:50px;}
-                        .textTwo{font-size:37px;}
+                        .text{font-size:.5rem;}
+                        .textTwo{font-size:.37rem;}
                     }
                 }
             }
             .caseBox.hover{
-                .case{.box(842px,124px);border-radius:62px;
-                    .caseCon{border-radius:52px;}
+                .case{.box(8.42rem,1.24rem);border-radius:.62rem;
+                    .caseCon{border-radius:.52rem;}
                 }
             }
         }   
     }
-    .qrCodeBox{@apply flex items-end;position:absolute;bottom:50px;right:45px;
-        .leftText{text-align:right;color:#fff;font-size:37px;line-height:1;
+    .qrCodeBox{@apply flex items-end;position:absolute;bottom:.5rem;right:.45rem;
+        .leftText{text-align:right;color:#fff;font-size:.37rem;line-height:1;
             p{font-weight:600;}
         }
-        img{width:150px;margin-left:15px;}
+        img{width:1.5rem;margin-left:.15rem;}
     }
 }
 .subPage.CLOTHING{background:#42497c;

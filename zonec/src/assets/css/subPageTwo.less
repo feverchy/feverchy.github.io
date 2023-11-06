@@ -1,49 +1,52 @@
 *{position:relative;}
 .box(@w,@h:100%,@b:transparent){width:@w;height:@h;background:@b}
-.subPageTwo{@apply min-w-full;height:100vh;padding:70px;padding-bottom:100px;padding-top:112.5px;
+.subPageTwo{@apply min-w-full;height:100vh;padding:.7rem;padding-bottom:1rem;padding-top:1.125rem;overflow:hidden;
     .backgImg{position:absolute;top:0;left:0;.box(100%,100%);}
     .conBox{.box(100%,100%);@apply flex items-start justify-center;
-        .leftBox{.box(160px,95%);border:5px solid #fff;border-right:none;border-bottom:none;}
-        .rightBox{height:100%;@apply flex-1;border:5px solid #fff;border-left:none;}
-        .btnBox{.box(190px,55px);@apply flex items-center justify-between;position:absolute;top:-70px;right:-30px;
-            .el-button{width:80px;height:100%;background:#fff;border:none;
-                span{font-size:32px;color:#00425C;}
+        .leftBox{.box(1.6rem,95%);border:0.05rem solid #fff;border-right:none;border-bottom:none;}
+        .rightBox{height:100%;@apply flex-1;border:0.05rem solid #fff;border-left:none;}
+        .btnBox{.box(1.9rem,.55rem);@apply flex items-center justify-between;position:absolute;top:-.7rem;right:-.3rem;
+            .el-button{width:.8rem;height:100%;background:#fff;border:none;
+                span{font-size:.32rem;color:#00425C;}
             }
             .el-button.hover{
                 span{font-weight:700;}
             }
         }
-        .btnBoxTwo{.box(160px,55px);@apply flex items-center justify-between;position:absolute;bottom:-20px;left:-30px;
-            img{width:68px;}
+        .btnBoxTwo{.box(1.6rem,.55rem);@apply flex items-center justify-between;position:absolute;bottom:-.2rem;left:-.3rem;
+            img{width:.68rem;}
             img:hover{opacity:0.9;}
         }
-        .el-scrollbar{width:100%;position:absolute;padding:60px 50px;
-            .title{font-size:70px;color:#fff;font-weight:700;}
-            .conTitle{font-size:60px;color:#fff;margin-top:10px;padding-left:50px;
+        .el-scrollbar{width:100%;position:absolute;padding:.6rem .5rem;
+            .title{font-size:.7rem;color:#fff;font-weight:700;}
+            .conTitle{font-size:.6rem;color:#fff;margin-top:.1rem;padding-left:.5rem;
                 span{position:absolute;height:100%;top:0;left:0;}
             }
             .content{width:100%;
-                .text{font-size:60px;color:#fff;margin-top:10px;padding-left:50px;
+                .text{font-size:.6rem;color:#fff;margin-top:.1rem;padding-left:.5rem;
                     img{width:100%}
                 }
             }
+            .videoBox{padding-left:.5rem;margin-top:.1rem;width:100%;
+                video{width:100%;}
+            }
         }
-        .btnPhoto{.box(190px,55px,#fff);position:absolute;bottom:20px;right:20px;@apply flex items-center justify-center;font-size:30px;border-radius:10px;
-            .el-icon{margin-right:20px;}
+        .btnPhoto{.box(1.9rem,.55rem,#fff);position:absolute;bottom:.2rem;right:.2rem;@apply flex items-center justify-center;font-size:.3rem;border-radius:.1rem;
+            .el-icon{margin-right:.2rem;}
         }
     }
     .layerBox{.box(100%,100%,rgba(255,255,255,.5));position:fixed;top:0;left:0;
-        .popBox{.box(1400px,800px,#fff);border-radius:20px;position:absolute;top:0;left:0;bottom:0;right:0;margin:auto;box-shadow:0px 0px 5px 2px #888888;padding:20px;
+        .popBox{.box(12rem,8rem,#fff);border-radius:.2rem;position:absolute;top:0;left:0;bottom:0;right:0;margin:auto;box-shadow:0 0 .05rem .02rem #888888;padding:.2rem;
             .popConBox{.box(100%,100%);}
-            .el-icon{.box(80px,80px,#fff);border-radius:50%;box-shadow:0px 0px 5px 2px #888888;position:absolute;bottom:-25px;right:-25px;@apply flex items-center justify-center;font-size:70px;}
-            .bottomPop{.box(100%,140px,rgba(255,255,255,.5));position:absolute;bottom:0;left:0;color:#fff;font-size:24px;padding:10px;}
+            .el-icon{.box(.8rem,.8rem,#fff);border-radius:50%;box-shadow:0 0 .05rem .02rem #888888;position:absolute;bottom:-.25rem;right:-.25rem;@apply flex items-center justify-center;font-size:.7rem;}
+            .bottomPop{.box(100%,1.4rem,rgba(255,255,255,.5));position:absolute;bottom:0;left:0;color:#fff;font-size:.24rem;padding:.1rem;}
             .el-carousel{.box(100%,100%);
                 .el-carousel__container{.box(100%,100%);}
                 .el-carousel-item{.box(100%,100%);}
                 img{width:100%;}
-                .el-carousel__indicators{height:40px;background:rgba(255,255,255,.8);border-radius:20px;bottom:20px;padding:0 20px;@apply flex items-center;
+                .el-carousel__indicators{height:.4rem;background:rgba(255,255,255,.8);border-radius:.2rem;bottom:.2rem;padding:0 .2rem;@apply flex items-center;
                     .el-carousel__indicator{
-                        .el-carousel__button{.box(15px,15px,#fff);border-radius:50%;}
+                        .el-carousel__button{.box(.15rem,.15rem,#fff);border-radius:50%;}
                     }
                 }
             }

@@ -1,5 +1,5 @@
 <template lang="">
-    <div class="subPageTwo" :class="classType[type]">
+    <div id="app" class="subPageTwo" :class="classType[type]">
         <img class="backgImg" src="../assets/images/backg_img_all_two.png" alt="">
         <div class="conBox">
             <div class="leftBox"></div>
@@ -14,6 +14,12 @@
                     </div>
                 </div>
 
+                <div class="videoBox" v-if="arr[type].cons[typeTwo].isVideo">
+                    <video ref="videoRef" controls>
+                        <source :src="video" type="video/mp4" />
+                        您的浏览器不支持 video 标签。
+                    </video>
+                </div>
             </el-scrollbar>
             <div class="btnBox">
                 <el-button :class="isChinese?'hover':''" @click="isChinese=true">中</el-button>
@@ -23,7 +29,7 @@
                 <img class="cursorPointer" src="../assets/images/icon_button_home.png" alt="" @click="router.push('/Home')"> 
                 <img class="cursorPointer" src="../assets/images/icon_button_return.png" alt="" @click="router.back()">
             </div>
-            <div class="btnPhoto cursorPointer" @click="isPop=true" v-if="type!=1">
+            <div class="btnPhoto cursorPointer" @click="isPop=true" v-if="arr[type].cons[typeTwo].isShowPhoto">
                 <el-icon><PictureFilled /></el-icon>
                 Photo
             </div>
@@ -54,10 +60,12 @@
     import MatchingDay2022Two from '../assets/images/MatchingDay20222.jpg'
     import SkillsAndThematicSharing from '../assets/images/SkillsandThematicSharing.jpg'
     import IdeationAndIncubationProgrammesGraduationDay from '../assets/images/IdeationandIncubationProgrammesGraduationDay2023.jpg'
-    import img1 from '../assets/images/Return Helper v.2.png'
+    import img1 from '../assets/images/1.png'
     import img2 from '../assets/images/2.png'
     import img3 from '../assets/images/3.png'
-    import img4 from '../assets/images/5.png'
+    import img4 from '../assets/images/4.png'
+    import img5 from '../assets/images/5.png'
+    import video from '../assets/images/Archireef_ Hello 2023.mp4'
 
     const router = useRouter()//路由
     const route = useRoute()//路由
@@ -104,6 +112,7 @@
             "cons": [
                 {
                     "title": {'eng': 'Glimpse of the Experience', 'china': '體驗分享'},
+                    "isShowPhoto": true,
                     "textArr": [
                         {
                             "textTtile": {'eng': 'InnOcircle Thematic Dinner', 'china': '創科圓聚主題晚宴'},
@@ -129,10 +138,12 @@
                 },
                 {
                     "title": {'eng': 'Success Stories', 'china': '成功案例'},
+                    "isShowPhoto": false,
+                    "isVideo": true,
                     "textArr": [
                         {
                             "textTtile": {'eng': '', 'china': ''},
-                            "textCon": {'eng': `<img src="${img1}" alt=""><img src="${img2}" alt=""><img src="${img3}" alt=""><img src="${img4}" alt="">`, 'china': `<img src="${img1}" alt=""><img src="${img2}" alt=""><img src="${img3}" alt=""><img src="${img4}" alt="">`},
+                            "textCon": {'eng': `<img src="${img1}" alt=""><img src="${img2}" alt=""><img src="${img3}" alt=""><img src="${img4}" alt=""><img src="${img5}" alt="">`, 'china': `<img src="${img1}" alt=""><img src="${img2}" alt=""><img src="${img3}" alt=""><img src="${img4}" alt=""><img src="${img5}" alt="">`},
                             "isShow": true
                         }
                     ]
@@ -143,6 +154,7 @@
             "cons": [
                 {
                     "title": {'eng': 'What is Mentorship Programme?', 'china': '導師計劃是什麼？'},
+                    "isShowPhoto": false,
                     "textArr": [
                         {
                             "textTtile": {'eng': '', 'china': ''},
@@ -153,6 +165,7 @@
                 },
                 {
                     "title": {'eng': 'What Will You Gain?', 'china': '你可以從中獲得什麼？'},
+                    "isShowPhoto": false,
                     "textArr": [
                         {
                             "textTtile": {'eng': '', 'china': ''},
@@ -173,6 +186,7 @@
                 },
                 {
                     "title": {'eng': 'Glimpse of the Experience', 'china': '經驗分享'},
+                    "isShowPhoto": true,
                     "textArr": [
                         {
                             "textTtile": {'eng': 'Matching Day', 'china': '配對日'},
@@ -192,6 +206,7 @@
             "cons": [
                 {
                     "title": {'eng': 'What is HKSTP Startups Alumni Association?', 'china': '什麼是香港科學園創科會？'},
+                    "isShowPhoto": true,
                     "textArr": [
                         {
                             "textTtile": {'eng': '', 'china': ''},
@@ -210,6 +225,7 @@
                 },
                 {
                     "title": {'eng': 'What Will You Gain?', 'china': '你可以從中獲得什麼？'},
+                    "isShowPhoto": true,
                     "textArr": [
                         {
                             "textTtile": {'eng': 'Business Opportunities', 'china': '商業機會'},
@@ -230,6 +246,7 @@
                 },
                 {
                     "title": {'eng': 'Glimpse of the Experience', 'china': '經驗分享'},
+                    "isShowPhoto": true,
                     "textArr": [
                         {
                             "textTtile": {'eng': 'Ideation & Incubation Programmes Graduation Day 2023', 'china': 'IDEATION及創科培育計劃畢業禮2023'},

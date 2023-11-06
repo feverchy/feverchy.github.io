@@ -1,5 +1,5 @@
 <template lang="">
-    <div class="IntroductionPage">
+    <div id="app" class="IntroductionPage">
         <img class="backgImg" src="../assets/images/backg_img_all.png" alt="">
         <div class="conBox">
             <div class="textBox">

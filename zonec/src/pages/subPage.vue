@@ -1,5 +1,5 @@
 <template lang="">
-    <div class="subPage" :class="classType[type]">
+    <div id="app" class="subPage" :class="classType[type]">
         <img src="../assets/images/subPage_backg.png" alt="" class="backgImg">
         <div class="conBox">
 

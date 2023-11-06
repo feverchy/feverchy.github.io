@@ -1,5 +1,5 @@
 <template lang="">
-    <div class="HomePage">
+    <div id="app" class="HomePage">
         <!-- <button v-for="(btn, index) in buttons" :key="index" class="animate__animated" :class="getAnimationClass(index)">
         {{ btn }}
         </button> -->

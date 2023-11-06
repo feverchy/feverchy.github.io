@@ -1,5 +1,5 @@
 <template lang="">
-    <div class="CoverPage" ref="backgroundDiv" @click="router.push('/Introduction')">
+    <div id="app" class="CoverPage" ref="backgroundDiv" @click="router.push('/Introduction')">
         <img src="../assets/images/home_title_img.png" alt="">
     </div>
 </template>
