@@ -33,7 +33,7 @@
                     </div>
                     <div class="case cursorPointer animate__animated animate__fadeInUp" @click="cose==1 ? router.push({ path: '/subPageTwo', query: { type: type, typeTwo: 2 }}) : router.push({ path: '/subPageThree', query: { type: type, typeTwo: 2 }})">
                         <div class="caseCon">
-                            <p class="textTwo">{{isChinese ? '對世界、市場、及目標客戶的影響​' : 'Effects to the World, Market, Target group'}}</p>
+                            <p class="textTwo">{{isChinese ? '對世界、市場、及目標客戶的影響​' : 'Effects to the World, Market, Target Group'}}</p>
                         </div>
                     </div>
                 </div>
@@ -70,7 +70,7 @@
                     </div>
                     <div class="case cursorPointer animate__animated animate__fadeInUp" @click="cose==1 ? router.push({ path: '/subPageTwo', query: { type: type, typeTwo: 2 }}) : router.push({ path: '/subPageThree', query: { type: type, typeTwo: 2 }})">
                         <div class="caseCon">
-                            <p class="textTwo">{{isChinese ? '對世界、市場、及目標客戶的影響​' : 'Effects to the World, Market, Target group'}}</p>
+                            <p class="textTwo">{{isChinese ? '對世界、市場、及目標客戶的影響​' : 'Effects to the World, Market, Target Group'}}</p>
                         </div>
                     </div>
                 </div>
@@ -107,7 +107,7 @@
                     </div>
                     <div class="case cursorPointer animate__animated animate__fadeInUp" @click="cose==1 ? router.push({ path: '/subPageTwo', query: { type: type, typeTwo: 2 }}) : router.push({ path: '/subPageThree', query: { type: type, typeTwo: 2 }})">
                         <div class="caseCon">
-                            <p class="textTwo">{{isChinese ? '對世界、市場、及目標客戶的影響​' : 'Effects to the World, Market, Target group'}}</p>
+                            <p class="textTwo">{{isChinese ? '對世界、市場、及目標客戶的影響​' : 'Effects to the World, Market, Target Group'}}</p>
                         </div>
                     </div>
                 </div>
@@ -144,7 +144,7 @@
                     </div>
                     <div class="case cursorPointer animate__animated animate__fadeInUp" @click="cose==1 ? router.push({ path: '/subPageTwo', query: { type: type, typeTwo: 2 }}) : router.push({ path: '/subPageThree', query: { type: type, typeTwo: 2 }})">
                         <div class="caseCon">
-                            <p class="textTwo">{{isChinese ? '對世界、市場、及目標客戶的影響​' : 'Effects to the World, Market, Target group'}}</p>
+                            <p class="textTwo">{{isChinese ? '對世界、市場、及目標客戶的影響​' : 'Effects to the World, Market, Target Group'}}</p>
                         </div>
                     </div>
                 </div>

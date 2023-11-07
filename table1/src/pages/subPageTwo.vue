@@ -65,8 +65,7 @@
                                 <template v-if="isChinese">
                                     菠蘿葉（Piñatex）和蘑菇菌絲（Mylo）的生產過程中使用化學品、水和能源消耗較少，減輕對生態系統的壓力。<br>
                                     利用植物作為原材料可以生物分解，產品的生命週期完結後便能回歸自然環境，降低環境污染。<br>
-                                    <span class="cursorPointer" @click="initialIndex=0,isPop=true">（圖1）</span><br>
-                                    智利的沙漠成為快速時尚廢物的傾倒場。
+                                    <span class="cursorPointer" @click="initialIndex=0,isPop=true">（圖1）</span>
                                 </template>
                                 <template v-else>
                                     The production of Piñatex and Mylo involves fewer chemicals, water, and energy consumption, reducing strains on ecosystems <span class="cursorPointer" @click="initialIndex=0,isPop=true">(Image 1)</span>.
@@ -106,10 +105,10 @@
                                 <template v-if="isChinese">除此之外，血紅素能刺激我們的味蕾，增強肉類的質地。創造出多汁、嫩滑的口感，捕捉到動物肉類的精髓。<span class="cursorPointer" @click="initialIndex=4,isPop=true">（圖5-7）</span></template>
                                 <template v-else>But it doesn't stop there. The heme tantalizes our taste buds and enhances meat texture. Creating a juicy, tender mouthfeel that captures the essence of animal-based meats.<br><span class="cursorPointer" @click="initialIndex=4,isPop=true">(Image 5-7)</span></template>
                             </div>
-                            <div class="text" v-if="isChinese"><span class="cursorPointer" @click="initialIndex=0,isPop=true">（圖1-4）</span></div>
+                            <!-- <div class="text" v-if="isChinese"><span class="cursorPointer" @click="initialIndex=0,isPop=true">（圖1-4）</span></div>
                             <div class="text" v-if="isChinese">從大豆萊姆蛋白的DNA中提取，轉移到酵母中，在實驗室中培養。</div>
                             <div class="text" v-if="isChinese"><span class="cursorPointer" @click="initialIndex=4,isPop=true">（圖5-7）</span></div>
-                            <div class="text" v-if="isChinese">血紅素捕獲氧氣並在生物體內運輸，例如牛的肌肉組織。牛肉的鮮血味來自血紅素。鐵和蛋白質也源自血紅素。</div>
+                            <div class="text" v-if="isChinese">血紅素捕獲氧氣並在生物體內運輸，例如牛的肌肉組織。牛肉的鮮血味來自血紅素。鐵和蛋白質也源自血紅素。</div> -->
                         </div>
                     </div>
                     <!-- Effects to the World, Market, Target group -->
@@ -121,9 +120,9 @@
                                 <template v-if="isChinese">與傳統的動物養殖相比，植物肉提供了美味且可持續的解決方案。我們可以通過減少土地、水源和飼料的需求，使畜牧業更加環保。<span class="cursorPointer" @click="initialIndex=0,isPop=true">（圖1）</span></template>
                                 <template v-else>When compared to animal agriculture, alternative meats provide a delicious and sustainable solution. Our livestock farming activities can be made more environmentally friendly by requiring less land, water, and feed.<br><span class="cursorPointer" @click="initialIndex=0,isPop=true">(Image 1)</span></template>
                             </div>
-                            <div class="text" v-if="isChinese"><span class="cursorPointer" @click="initialIndex=0,isPop=true">（圖1）</span></div>
+                            <!-- <div class="text" v-if="isChinese"><span class="cursorPointer" @click="initialIndex=0,isPop=true">（圖1）</span></div>
                             <div class="text" v-if="isChinese">畜牧業佔據了全球農業用地的近80％（相等於4,000萬平方公里），然而只生產了全球熱量供應的不足20%。</div>
-                            <div class="text" v-if="isChinese">https://assets.ourworldindata.org/uploads/2019/11/Global-land-use-graphic.png</div>
+                            <div class="text" v-if="isChinese">https://assets.ourworldindata.org/uploads/2019/11/Global-land-use-graphic.png</div> -->
                         </div>
                     </div>
                 </div>
@@ -139,7 +138,7 @@
                                 <template v-else>In a rapidly urbanizing world where 68% of the population is projected to live in cities by 2050, the construction industry faces immense pressure to find faster and more scalable methods to meet the growing demand for housing and infrastructure. In parallel, global construction prices are soaring, with a whopping 20 percent increase reported between July 2020 and July 2021.<br><span class="cursorPointer" @click="initialIndex=0,isPop=true">(Image 1)</span></template>
                             </div>
                             <div class="text" v-if="isChinese"><span class="cursorPointer" @click="initialIndex=0,isPop=true">（圖1）</span></div>
-                            <div class="text" v-if="isChinese">根據英國商業、能源和工業戰略部最新數據，2020年7月至2021年7月間，建築工程的材料價格上漲了20%。</div>
+                            <!-- <div class="text" v-if="isChinese">根據英國商業、能源和工業戰略部最新數據，2020年7月至2021年7月間，建築工程的材料價格上漲了20%。</div> -->
                         </div>
                     </div>
                     <!-- Innovator’s Dream -->
@@ -151,8 +150,8 @@
                                 <template v-if="isChinese">建築科技公司已經開始採用「組裝合成」建築技術（MiC），將設計、製造和施工整合到一個平台上。目標是以統一標準建築住所，以便快速建造多房間的住宅建築。<span class="cursorPointer" @click="initialIndex=0,isPop=true">（圖1）</span></template>
                                 <template v-else>Construction technology companies have embraced modular integrated construction (MiC) to integrate design, manufacturing, and construction into one platform. They aim to standardize construction units so that multi-unit residential buildings<br><span class="cursorPointer" @click="initialIndex=0,isPop=true">(Image 1)</span>can be erected rapidly.</template>
                             </div>
-                            <div class="text" v-if="isChinese"><span class="cursorPointer" @click="initialIndex=0,isPop=true">（圖1）</span></div>
-                            <div class="text" v-if="isChinese">香港科學園的創新斗室是香港首座應用 MiC 建築技術的多層住宅大樓，比預計提早六個月完工，並實現了60萬個「無事故工時」。</div>
+                            <!-- <div class="text" v-if="isChinese"><span class="cursorPointer" @click="initialIndex=0,isPop=true">（圖1）</span></div>
+                            <div class="text" v-if="isChinese">香港科學園的創新斗室是香港首座應用 MiC 建築技術的多層住宅大樓，比預計提早六個月完工，並實現了60萬個「無事故工時」。</div> -->
                         </div>
                     </div>
                     <!-- Effects to the World, Market, Target group -->
@@ -165,7 +164,7 @@
                                 <template v-else>Since 2017, the Development Bureau (DEVB) has been promoting Modular Integrated Construction (MiC) to enhance the industry's productivity and cost-effectiveness. Under the steer of the DEVB, the Construction Industry Council and relevant departments have provided design guidelines, codes and practice notes on MiC. A number of public and non-governmental organisations, including the Hong Kong Housing Authority, the Hong Kong Housing Society, the Urban Renewal Authority, the Hospital Authority, social enterprises and private developers, have started the adoption of MiC and there are over 70 MiC projects at present.<span class="cursorPointer" @click="initialIndex=0,isPop=true">(Image 1)</span><br>https://www.info.gov.hk/gia/general/202305/31/P2023053100608.htm</template>
                             </div>
                             <div class="text" v-if="isChinese"><span class="cursorPointer" @click="initialIndex=0,isPop=true">（圖1）</span></div>
-                            <div class="text" v-if="isChinese">香港房屋協會將採用模塊化建造（MiC）方法，在沙田乙明邨羽毛球場上建造一座10層高的老年護理院，提供64個單人房間給年齡超過70歲的居民：</div>
+                            <!-- <div class="text" v-if="isChinese">香港房屋協會將採用模塊化建造（MiC）方法，在沙田乙明邨羽毛球場上建造一座10層高的老年護理院，提供64個單人房間給年齡超過70歲的居民：</div> -->
                         </div>
                     </div>
                 </div>
@@ -185,7 +184,7 @@
                                 <template v-else>According to a 2022 survey, commuting by private car has become more common in cities, where more than half the world's population lives<span class="cursorPointer" @click="initialIndex=0,isPop=true">(Image 1)</span>Consequently, quality of life can be compromised and air quality can worsen</template>
                             </div>
                             <div class="text" v-if="isChinese"><span class="cursorPointer" @click="initialIndex=0,isPop=true">（圖1）</span></div>
-                            <div class="text" v-if="isChinese">這張圖表顯示了全球人們在2022年通勤上班、上學或上大學時使用的交通方式。</div>
+                            <!-- <div class="text" v-if="isChinese">這張圖表顯示了全球人們在2022年通勤上班、上學或上大學時使用的交通方式。</div> -->
                         </div>
                     </div>
                     <!-- Innovator’s Dream -->
@@ -212,8 +211,8 @@
                                 <template v-if="isChinese">技術將為不斷變化的交通狀況提供解決方案，為減少擠塞、提高效率和環保交通體驗打開可能性。</template>
                                 <template v-else>Technology will unlock possibilities for dynamic commuting solutions, less congestion, better efficiency, and eco-friendly transport experience.</template>
                             </div>
-                            <div class="text" v-if="isChinese"><span class="cursorPointer" @click="initialIndex=0,isPop=true">（圖1）</span></div>
-                            <div class="text" v-if="isChinese">在2018年12月18日，Boring Company揭示了他們的地下交通隧道。</div>
+                            <!-- <div class="text" v-if="isChinese"><span class="cursorPointer" @click="initialIndex=0,isPop=true">（圖1）</span></div> -->
+                            <!-- <div class="text" v-if="isChinese">在2018年12月18日，Boring Company揭示了他們的地下交通隧道。</div> -->
                         </div>
                     </div>
                 </div>
@@ -234,7 +233,13 @@
                     <el-carousel :initial-index="initialIndex">
                         <el-carousel-item v-for="(item, index) in imgs[type].imgArr[typeTwo].imgInfo" :key="index">
                             <img :src="item.img" alt="">
-                            <div class="bottomPop font-avenir" v-html="item.text"></div>
+                            <div class="bottomPop font-avenir">
+                                <span v-if="item.text.china">
+                                    <span v-if="isChinese" v-html="item.text.china"></span>
+                                    <span v-else v-html="item.text.eng"></span>
+                                </span>
+                                <span v-else v-html="item.text"></span>
+                            </div>
                         </el-carousel-item>
                     </el-carousel>
                 </div>
@@ -249,7 +254,9 @@
     import img3 from '../assets/images/Clothing_Case1_Innovator_Image1.jpg'
     import img4 from '../assets/images/Clothing_Case1_Innovator_Image2.jpg'
     import img5 from '../assets/images/3 - Effects to the world - Image 1.png'
-    import img6 from '../assets/images/Food_Case1_Worldproblem_Image1.jpg'
+    import img6 from '../assets/images/Food_Case1_Worldproblem_Image1_a.jpg'
+    import img20 from '../assets/images/Food_Case1_Worldproblem_Image1_b.jpg'
+    import img21 from '../assets/images/Food_Case1_Worldproblem_Image1_c.png'
     import img7 from '../assets/images/Food_Case1_Innovator_Image1.jpg'
     import img8 from '../assets/images/Food_Case1_Innovator_Image2.jpg'
     import img9 from '../assets/images/Food_Case1_Innovator_Image4.jpg'
@@ -298,7 +305,7 @@
                 },
                 {
                     "imgInfo": [
-                        {img: img5, text: "Chile's desert dumping ground for fast fashion leftovers."},
+                        {img: img5, text: {china: '智利的沙漠成為快速時尚廢物的傾倒場。', eng: "Chile's desert dumping ground for fast fashion leftovers."}},
                     ]
                 }
             ]
@@ -307,23 +314,25 @@
             "imgArr": [
                 {
                     "imgInfo": [
-                        {img: img6, text: "How cows contribute to global warming.<br>Source: https://www.livescience.com/52680-the-role-of-animal-farts-in-global-warming-infographic.html"}
+                        {img: img6, text: {china: '牛隻如何加速全球暖化。', eng: "How cows contribute to global warming.<br>Source: https://www.livescience.com/52680-the-role-of-animal-farts-in-global-warming-infographic.html"}},
+                        {img: img20, text: {china: '牛隻如何加速全球暖化。', eng: "How cows contribute to global warming.<br>Source: https://www.livescience.com/52680-the-role-of-animal-farts-in-global-warming-infographic.html"}},
+                        {img: img21, text: {china: '牛隻如何加速全球暖化。', eng: "How cows contribute to global warming.<br>Source: https://www.livescience.com/52680-the-role-of-animal-farts-in-global-warming-infographic.html"}}
                     ]
                 },
                 {
                     "imgInfo": [
-                        {img: img7, text: "Pick the DNA from Soy Leghemgolbin into yeast and grown in lab."},
-                        {img: img8, text: "Pick the DNA from Soy Leghemgolbin into yeast and grown in lab."},
-                        {img: img9, text: "Pick the DNA from Soy Leghemgolbin into yeast and grown in lab."},
-                        {img: img10, text: "Pick the DNA from Soy Leghemgolbin into yeast and grown in lab."},
-                        {img: img11, text: "Hemes grab oxygen and carries around living bodies, such as cow’s muscle tissue. The blooded flavor from beef comes from Hemes. The iron, proteins also derives from Hemes."},
-                        {img: img12, text: "Hemes grab oxygen and carries around living bodies, such as cow’s muscle tissue. The blooded flavor from beef comes from Hemes. The iron, proteins also derives from Hemes."},
-                        {img: img13, text: "Hemes grab oxygen and carries around living bodies, such as cow’s muscle tissue. The blooded flavor from beef comes from Hemes. The iron, proteins also derives from Hemes."},
+                        {img: img7, text: {china: '從大豆萊姆蛋白的DNA中提取，轉移到酵母中，在實驗室中培養。', eng: "Pick the DNA from Soy Leghemgolbin into yeast and grown in lab."}},
+                        {img: img8, text: {china: '從大豆萊姆蛋白的DNA中提取，轉移到酵母中，在實驗室中培養。', eng: "Pick the DNA from Soy Leghemgolbin into yeast and grown in lab."}},
+                        {img: img9, text: {china: '從大豆萊姆蛋白的DNA中提取，轉移到酵母中，在實驗室中培養。', eng: "Pick the DNA from Soy Leghemgolbin into yeast and grown in lab."}},
+                        {img: img10, text: {china: '從大豆萊姆蛋白的DNA中提取，轉移到酵母中，在實驗室中培養。', eng: "Pick the DNA from Soy Leghemgolbin into yeast and grown in lab."}},
+                        {img: img11, text: {china: '血紅素捕獲氧氣並在生物體內運輸，例如牛的肌肉組織。牛肉的鮮血味來自血紅素。鐵和蛋白質也源自血紅素。', eng: "Hemes grab oxygen and carries around living bodies, such as cow’s muscle tissue. The blooded flavor from beef comes from Hemes. The iron, proteins also derives from Hemes."}},
+                        {img: img12, text: {china: '血紅素捕獲氧氣並在生物體內運輸，例如牛的肌肉組織。牛肉的鮮血味來自血紅素。鐵和蛋白質也源自血紅素。', eng: "Hemes grab oxygen and carries around living bodies, such as cow’s muscle tissue. The blooded flavor from beef comes from Hemes. The iron, proteins also derives from Hemes."}},
+                        {img: img13, text: {china: '血紅素捕獲氧氣並在生物體內運輸，例如牛的肌肉組織。牛肉的鮮血味來自血紅素。鐵和蛋白質也源自血紅素。', eng: "Hemes grab oxygen and carries around living bodies, such as cow’s muscle tissue. The blooded flavor from beef comes from Hemes. The iron, proteins also derives from Hemes."}},
                     ]
                 },
                 {
                     "imgInfo": [
-                        {img: img14, text: "Livestock takes up nearly 80% of global agricultural land (40 mil KM2), yet produces less than 20% of the world’s supply of calories.<br>Source: https://en.m.wikipedia.org/wiki/File:Global-land-use-graphic.png"},
+                        {img: img14, text: {china: '畜牧業佔據了全球農業用地的近80％（相等於4,000萬平方公里），然而只生產了全球熱量供應的不足20%。<br>來源: https://assets.ourworldindata.org/uploads/2019/11/Global-land-use-graphic.png', eng: "Livestock takes up nearly 80% of global agricultural land (40 mil KM2), yet produces less than 20% of the world’s supply of calories.<br>Source: https://assets.ourworldindata.org/uploads/2019/11/Global-land-use-graphic.png"}},
                     ]
                 }
             ]
@@ -332,17 +341,17 @@
             "imgArr": [
                 {
                     "imgInfo": [
-                        {img: img15, text: "According to the latest figures from the UK Department for Business, Energy & Industrial Strategy, material prices for all construction work rose by 20 percent between July 2020 and July 2021."}
+                        {img: img15, text: {china: '根據英國商業、能源和工業戰略部最新數據，2020年7月至2021年7月間，建築工程的材料價格上漲了20%。', eng: "According to the latest figures from the UK Department for Business, Energy & Industrial Strategy, material prices for all construction work rose by 20 percent between July 2020 and July 2021."}}
                     ]
                 },
                 {
                     "imgInfo": [
-                        {img: img16, text: "HKSTP InnoCell, Hong Kong's first multi-storey residential building with MiC technology, was completed 6 months ahead of schedule and and achieved 600,000 person-hours without an accident.<br>Source: https://www.autodesk.com/design-make/articles/innocell"}
+                        {img: img16, text: {china: '香港科學園的創新斗室是香港首座應用 MiC 建築技術的多層住宅大樓，比預計提早六個月完工，並實現了60萬個「無事故工時」。', eng: "HKSTP InnoCell, Hong Kong's first multi-storey residential building with MiC technology, was completed 6 months ahead of schedule and and achieved 600,000 person-hours without an accident.<br>Source: https://www.autodesk.com/design-make/articles/innocell"}}
                     ]
                 },
                 {
                     "imgInfo": [
-                        {img: img17, text: "Hong Kong Housing Society will use MiC method to build a 10-storey Elderly Home on a badminton court at Jat Min Chuen in Sha Tin, providing 64 single room units for those who are over 70 years old.<br>SSource: https://www.wil.com.hk/jat-min-chuen"},
+                        {img: img17, text: {china: '香港房屋協會將採用模塊化建造（MiC）方法，在沙田乙明邨羽毛球場上建造一座10層高的老年護理院，提供64個單人房間給年齡超過70歲的居民：', eng: "Hong Kong Housing Society will use MiC method to build a 10-storey Elderly Home on a badminton court at Jat Min Chuen in Sha Tin, providing 64 single room units for those who are over 70 years old.<br>SSource: https://www.wil.com.hk/jat-min-chuen"}},
                     ]
                 }
             ]
@@ -351,7 +360,7 @@
             "imgArr": [
                 {
                     "imgInfo": [
-                        {img: img18, text: "This chart shows the mode of transport people around the world use to commute to work/school/university in 2022."}
+                        {img: img18, text: {china: '這張圖表顯示了全球人們在2022年通勤上班、上學或上大學時使用的交通方式。', eng: "This chart shows the mode of transport people around the world use to commute to work/school/university in 2022."}}
                     ]
                 },
                 {
@@ -361,7 +370,7 @@
                 },
                 {
                     "imgInfo": [
-                        {img: img19, text: "On Tuesday, Dec18, 2018. The Boring Company unveiled their underground transporation tunnel.<br>Source: https://www.nbcnews.com/mach/tech/elon-musk-puts-his-electric-car-tunnel-calls-it-future-ncna949686"},
+                        {img: img19, text: {china: '在2018年12月18日，Boring Company揭示了他們的地下交通隧道。', eng: "On Tuesday, Dec18, 2018. The Boring Company unveiled their underground transporation tunnel.<br>Source: https://www.nbcnews.com/mach/tech/elon-musk-puts-his-electric-car-tunnel-calls-it-future-ncna949686"}},
                     ]
                 }
             ]

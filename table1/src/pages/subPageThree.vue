@@ -26,9 +26,7 @@
                             <div class="text">
                                 <template v-if="isChinese">
                                     運動服裝公司正在持續創新，開發可收集實時數據的智慧服飾技術，徹底改變運動員的表現和避免傷患。<br>
-                                    <span class="cursorPointer" @click="initialIndex=0, isPop=true">（圖1）</span><br>
-                                    Catapult Sports 和 STATSports 這類型的企業提供基於 GPS 的追蹤系統，使運動員和教練能夠監測性能指標，如速度、覆蓋距離、加速度和減速度。通過分析這些數據，運動員可以識別可能導致受傷的模式，例如過度負荷或強度突然增加，並相應調整他們的訓練。<br>
-                                    <span class="cursorPointer" @click="initialIndex=1, isPop=true">（圖2）</span>運動員需要穿戴隱藏在球衣或內衣中的GPS追蹤系統，以監測他們的表現並計算他們受傷的可能性。
+                                    <span class="cursorPointer" @click="initialIndex=0, isPop=true">（圖1）</span><span class="cursorPointer" @click="initialIndex=1, isPop=true">（圖2）</span>
                                 </template>
                                 <template v-else>
                                     Sportswear companies are revolutionizing athlete performance and injury prevention through continuous innovation and the development of smart clothing technologies that collect real-time data. <span class="cursorPointer" @click="initialIndex=0, isPop=true">(Image 1)</span>
@@ -87,8 +85,8 @@
                                     This staggering statistic is made even more unsettling when we consider the number of hungry people around the world. Food waste isn't just a matter of inefficiency; it's a matter of social justice.
                                 </template>
                             </div>
-                            <div class="text" v-if="isChinese"><span class="cursorPointer" @click="initialIndex=0,isPop=true">（圖1）</span></div>
-                            <div class="text" v-if="isChinese">https://thebeat.asia/hong-kong/terra/sustainability/hong-kongs-food-waste-problxem-and-what-were-doing-about-it</div>
+                            <!-- <div class="text" v-if="isChinese"><span class="cursorPointer" @click="initialIndex=0,isPop=true">（圖1）</span></div>
+                            <div class="text" v-if="isChinese">https://thebeat.asia/hong-kong/terra/sustainability/hong-kongs-food-waste-problxem-and-what-were-doing-about-it</div> -->
                         </div>
                     </div>
                     <!-- Innovator’s Dream -->
@@ -100,8 +98,8 @@
                                 <template v-if="isChinese">香港創新者和政府致力將多餘的食物轉贈給有需要的人，從而減少環境和經濟上的浪費。<span class="cursorPointer" @click="initialIndex=0,isPop=true">（圖1）</span></template>
                                 <template v-else>Hong Kong innovators and government work to redirect excess food to people who can benefit from it, reducing both environmental and economic waste.​ <br><span class="cursorPointer" @click="initialIndex=0,isPop=true">(Image 1)</span></template>
                             </div>
-                            <div class="text" v-if="isChinese"><span class="cursorPointer" @click="initialIndex=0,isPop=true">（圖1）</span></div>
-                            <div class="text" v-if="isChinese">「香港2035年食物浪費藍圖」制定減少浪費食物的策略。</div>
+                            <!-- <div class="text" v-if="isChinese"><span class="cursorPointer" @click="initialIndex=0,isPop=true">（圖1）</span></div>
+                            <div class="text" v-if="isChinese">「香港2035年食物浪費藍圖」制定減少浪費食物的策略。</div> -->
                         </div>
                     </div>
                     <!-- Effects to the World, Market, Target group -->
@@ -121,8 +119,8 @@
                                 <template v-if="isChinese">政府通過智能食物回收機，為回收家中剩餘食物的相關項目提供補貼，以支持回收業、符合資格的機構和社區組織。<span class="cursorPointer" @click="initialIndex=0,isPop=true">（圖1）</span></template>
                                 <template v-else>As part of the Recycling Fund, the Government subsidizes the recycling industry, eligible organizations, and community organizations that pursue food waste-related projects with smart bins for recycling food waste.<br><span class="cursorPointer" @click="initialIndex=0,isPop=true">(Image 1)</span></template>
                             </div>
-                            <div class="text" v-if="isChinese"><span class="cursorPointer" @click="initialIndex=0,isPop=true">（圖1）</span></div>
-                            <div class="text" v-if="isChinese">在不同的建築物設置智能回收垃圾桶，收集剩餘食物。</div>
+                            <!-- <div class="text" v-if="isChinese"><span class="cursorPointer" @click="initialIndex=0,isPop=true">（圖1）</span></div>
+                            <div class="text" v-if="isChinese">在不同的建築物設置智能回收垃圾桶，收集剩餘食物。</div> -->
                         </div>
                     </div>
                 </div>
@@ -157,7 +155,7 @@
                                 <template v-else>Customer can use their smartphones to virtually place and preview select furniture and finishes in their desired spaces. <br><span class="cursorPointer" @click="initialIndex=0,isPop=true">(Image 1)</span></template>
                             </div>
                             <div class="text" v-if="isChinese"><span class="cursorPointer" @click="initialIndex=0,isPop=true">（圖1）</span></div>
-                            <div class="text" v-if="isChinese">許多大型家具公司已經採用擴增實境技術。</div>
+                            <!-- <div class="text" v-if="isChinese">許多大型家具公司已經採用擴增實境技術。</div> -->
                         </div>
                     </div>
                     <!-- Effects to the World, Market, Target group -->
@@ -178,8 +176,8 @@
                                 </template>
                             </div>
                             <div class="text" v-if="isChinese"><span class="cursorPointer" @click="initialIndex=0,isPop=true">（圖1）</span></div>
-                            <div class="text" v-if="isChinese">根據一項研究，百分之六十的消費者喜歡使用擴增實境技術購物家具。</div>
-                            <div class="text" v-if="isChinese">https://www.centricdigital.com/blog/how-augmented-reality-could-help-retailers-increase-revenue</div>
+                            <!-- <div class="text" v-if="isChinese">根據一項研究，百分之六十的消費者喜歡使用擴增實境技術購物家具。</div>
+                            <div class="text" v-if="isChinese">https://www.centricdigital.com/blog/how-augmented-reality-could-help-retailers-increase-revenue</div> -->
                         </div>
                     </div>
                 </div>
@@ -239,8 +237,8 @@
                             </div>
                             <div class="text" v-if="!isChinese">In terms of EV, industry analyst stated the falling cost of the lithium batteries will drive the take-up of electric and hybrid car.</div>
                             <div class="text" v-if="isChinese">在電動車方面，行業分析師表示，鋰電池成本的下降，將推動大眾使用電動和油電混合動力車。</div>
-                            <div class="text" v-if="isChinese"><span class="cursorPointer" @click="initialIndex=0,isPop=true">（圖1）</span></div>
-                            <div class="text" v-if="isChinese">美國科技公司Hyperion於2020年推出了一款以氫燃料為動力的超級跑車「Hyperion XP-1」。它的最高時速可達350公里，行駛里程超過1,600公里。</div>
+                            <!-- <div class="text" v-if="isChinese"><span class="cursorPointer" @click="initialIndex=0,isPop=true">（圖1）</span></div>
+                            <div class="text" v-if="isChinese">美國科技公司Hyperion於2020年推出了一款以氫燃料為動力的超級跑車「Hyperion XP-1」。它的最高時速可達350公里，行駛里程超過1,600公里。</div> -->
                         </div>
                     </div>
                 </div>
@@ -261,7 +259,13 @@
                     <el-carousel :initial-index="initialIndex">
                         <el-carousel-item v-for="(item, index) in imgs[type].imgArr[typeTwo].imgInfo" :key="index">
                             <img :src="item.img" alt="example">
-                            <div class="bottomPop font-avenir" v-html="item.text"></div>
+                            <div class="bottomPop font-avenir">
+                                <span v-if="item.text.china">
+                                    <span v-if="isChinese" v-html="item.text.china"></span>
+                                    <span v-else v-html="item.text.eng"></span>
+                                </span>
+                                <span v-else v-html="item.text"></span>
+                            </div>
                         </el-carousel-item>
                     </el-carousel>
                 </div>
@@ -311,8 +315,8 @@
                 },
                 {
                     "imgInfo": [
-                        {img: img3, text: "Companies like Catapult Sports and STATSports offer GPS-based tracking systems that enable athletes and coaches to monitor performance metrics such as speed, distance covered, acceleration, and deceleration. By analysing this data, athletes can identify patterns that may lead to injury, such as excessive load or sudden spikes in intensity, and adjust their training accordingly."},
-                        {img: img4, text: 'Players are required to wear the GPS tracking system that hidden in their jerseys or underwear for monitoring their performance and calculate their possibility to injury.'},
+                        {img: img3, text: {china: 'Catapult Sports 和 STATSports 這類型的企業提供基於 GPS 的追蹤系統，使運動員和教練能夠監測性能指標，如速度、覆蓋距離、加速度和減速度。通過分析這些數據，運動員可以識別可能導致受傷的模式，例如過度負荷或強度突然增加，並相應調整他們的訓練。', eng: "Companies like Catapult Sports and STATSports offer GPS-based tracking systems that enable athletes and coaches to monitor performance metrics such as speed, distance covered, acceleration, and deceleration. By analysing this data, athletes can identify patterns that may lead to injury, such as excessive load or sudden spikes in intensity, and adjust their training accordingly."}},
+                        {img: img4, text: {china: '運動員需要穿戴隱藏在球衣或內衣中的GPS追蹤系統，以監測他們的表現並計算他們受傷的可能性。', eng: "Players are required to wear the GPS tracking system that hidden in their jerseys or underwear for monitoring their performance and calculate their possibility to injury."}},
                     ]
                 },
                 {
@@ -331,12 +335,12 @@
                 },
                 {
                     "imgInfo": [
-                        {img: img6, text: '"Waste Blueprint for Hong Kong 2035" to map out the strategies for food waste management.<br>Source: https://www.epd.gov.hk/epd/psb_charging/en/introduction/index.html'}
+                        {img: img6, text: {china: '「香港2035年食物浪費藍圖」制定減少浪費食物的策略。', eng: '"Waste Blueprint for Hong Kong 2035" to map out the strategies for food waste management.<br>Source: https://www.epd.gov.hk/epd/psb_charging/en/introduction/index.html'}}
                     ]
                 },
                 {
                     "imgInfo": [
-                        {img: img7, text: "Smart recycling bins to collect food waste in buildings.<br>Source: https://www.epd.gov.hk/epd/english/environmentinhk/waste/prob_solutions/food_waste_challenge.html"},
+                        {img: img7, text: {china: '在不同的建築物設置智能回收垃圾桶，收集剩餘食物。', eng: "Smart recycling bins to collect food waste in buildings.<br>Source: https://www.epd.gov.hk/epd/english/environmentinhk/waste/prob_solutions/food_waste_challenge.html"}},
                     ]
                 }
             ]
@@ -350,12 +354,12 @@
                 },
                 {
                     "imgInfo": [
-                        {img: img8, text: '"Many major furniture companies have already adopted augmented reality.<br>https://www.shutterstock.com/zh/image-photo/ar-technology-app-living-room-furniture-1997566352'}
+                        {img: img8, text: {china: '許多大型家具公司已經採用擴增實境技術。', eng: '"Many major furniture companies have already adopted augmented reality.<br>https://www.shutterstock.com/zh/image-photo/ar-technology-app-living-room-furniture-1997566352'}}
                     ]
                 },
                 {
                     "imgInfo": [
-                        {img: img9, text: "According to a study, 60% of consumers enjoy shopping for furniture using augmented reality.<br>Source: https://www.centricdigital.com/blog/how-augmented-reality-could-help-retailers-increase-revenue"},
+                        {img: img9, text: {china: '根據一項研究，百分之六十的消費者喜歡使用擴增實境技術購物家具。', eng: "According to a study, 60% of consumers enjoy shopping for furniture using augmented reality.<br>Source: https://www.centricdigital.com/blog/how-augmented-reality-could-help-retailers-increase-revenue"}},
                     ]
                 }
             ]
@@ -374,7 +378,7 @@
                 },
                 {
                     "imgInfo": [
-                        {img: img11, text: 'The American technology company Hyperion launched a hydrogen-fueled supercar "Hyperion XP-1" last year (2020). It has a top speed of 350km/h, and travel range of over 1,600 kilometers.<br>Source: https://www.shutterstock.com/zh/image-photo/los-angeles-united-states-october-10-2238203053'},
+                        {img: img11, text: {china: '美國科技公司Hyperion於2020年推出了一款以氫燃料為動力的超級跑車「Hyperion XP-1」。它的最高時速可達350公里，行駛里程超過1,600公里。', eng: 'The American technology company Hyperion launched a hydrogen-fueled supercar "Hyperion XP-1" last year (2020). It has a top speed of 350km/h, and travel range of over 1,600 kilometers.<br>Source: https://www.shutterstock.com/zh/image-photo/los-angeles-united-states-october-10-2238203053'}},
                     ]
                 }
             ]
