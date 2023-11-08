@@ -30,13 +30,19 @@
                 <p>或了解更多</p>
             </div>
             <div class="leftText font-Acumin-Variable-Concept" v-else>
-                <p>To apply now or</p>
-                <p>find out more</p>
+                <p>To Apply Now</p>
+                <p>or</p>
+                <p>Find Out</p>
+                <p>More</p>
             </div>
-            <img src="../assets/images/Ideation_QR_ENG.png" v-if="type==0" alt="" class="qrCode">
-            <img src="../assets/images/incubation_QR_ENG.png" v-if="type==1" alt="" class="qrCode">
-            <img src="../assets/images/Acceleration_QR_ENG.png" v-if="type==2" alt="" class="qrCode">
-            <img src="../assets/images/elite_QR_ENG.png" v-if="type==3" alt="" class="qrCode">
+            <img src="../assets/images/Ideation_QR_ENG.png" v-if="type==0 && !isChinese" alt="" class="qrCode">
+            <img src="../assets/images/Ideation_QR_China.png" v-if="type==0 && isChinese" alt="" class="qrCode">
+            <img src="../assets/images/incubation_QR_ENG.png" v-if="type==1 && !isChinese" alt="" class="qrCode">
+            <img src="../assets/images/incubation_QR_China.png" v-if="type==1 && isChinese" alt="" class="qrCode">
+            <img src="../assets/images/Acceleration_QR_ENG.png" v-if="type==2 && !isChinese" alt="" class="qrCode">
+            <img src="../assets/images/Acceleration_QR_China.png" v-if="type==2 && isChinese" alt="" class="qrCode">
+            <img src="../assets/images/elite_QR_ENG.png" v-if="type==3 && !isChinese" alt="" class="qrCode">
+            <img src="../assets/images/elite_QR_China.png" v-if="type==3 && isChinese" alt="" class="qrCode">
         </div>
         <div class="layerBox" v-if="isPop">
             <div class="popBox">
@@ -90,7 +96,7 @@
                 {
                     "eng": "How Do You Apply for Ideation Programme?", 
                     "china": "如何申請IDEATION計劃？",
-                    "popText": [{"eng": "Ensure you meet all the admission criteria before submitting your application to unlock the path to startup success:", "china": "在提交申請之前，請確保您符合所有錄取標準，為創科成功鋪路："}, {"eng": "1. Submit your proposal for the assessment on Evaluation Criteria, with reference to a template provided on HKSTP website.<br>2. Complete the online application with supporting documents.", "china": "1. 請準備一份商業計劃書，涵蓋審核標準，詳情可參考香港科技園網站的計劃書範本。<br>2. 完成網上申請流程，上載補充文件。"}, {"eng": "Evaluation Criteria:<br>1. Team competency<br>2. Business development potential<br>3. Innovativeness<br>4. Research & Development", "china": "審核標準:<br>1. 團隊的質素和能力<br>2. 商業營運之可行性<br>3. 項目的創新性<br>4. 科技研發內容"}, {"eng": "Application Timeline<br>Ideation Programme is open for application every January, May, and September.", "china": "IDEATION計劃於每年1月、5月、9月接受申請。"}]
+                    "popText": [{"eng": "Ensure you meet all the admission criteria before submitting your application to unlock the path to startup success:", "china": "在提交申請之前，請確保您符合所有錄取標準，為創科成功鋪路："}, {"eng": "1. Submit your proposal for the assessment on Evaluation Criteria, with reference to a template provided on HKSTP website.<br>2. Complete the online application with supporting documents.", "china": "1. 請準備一份商業計劃書，涵蓋審核標準，詳情可參考香港科技園網站的計劃書範本。<br>2. 完成網上申請流程，上載補充文件。"}, {"eng": "Evaluation Criteria:<br>1. Team competency<br>2. Business development potential<br>3. Innovativeness<br>4. Research & Development", "china": "審核標準:<br>1. 團隊的質素和能力<br>2. 商業營運之可行性<br>3. 項目的創新性<br>4. 科技研發內容"}, {"eng": "Application Timeline:<br>Ideation Programme is open for application every January, May, and September.", "china": "IDEATION計劃於每年1月、5月、9月接受申請。"}]
                 },
                 // {
                 //     "eng": "Programme Startups Directory", 

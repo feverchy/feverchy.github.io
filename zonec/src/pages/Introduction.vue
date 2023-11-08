@@ -4,8 +4,8 @@
         <div class="conBox">
             <div class="textBox">
                 <div class="font-avenir animate__animated animate__rotateIn" v-if="isChinese">
-                    <p>待定</p>
-                    <!-- <p>团结我们的社区以产生协同影响</p> -->
+                    <p>點滴發生 泛起漣漪 創造深遠影響</p>
+                    <p>海納人才 凝聚社群 開啟創新未來</p>
                 </div>
                 <div class="font-avenir animate__animated animate__rotateIn" v-else>
                     <p>Connecting People, Amplifying Ripples: </p>

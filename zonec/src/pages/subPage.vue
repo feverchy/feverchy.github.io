@@ -26,13 +26,13 @@
                 <img class="cursorPointer" src="../assets/images/icon_button_return.png" alt="" @click="returnPage">
             </div>
         </div>
-        <div class="qrCodeBox" v-if="type==1">
+        <div class="qrCodeBox" v-if="type==1" :class="isChinese ? 'hover' : ''">
             <div class="leftText font-Acumin-Variable-Concept" v-if="isChinese">
                 <p>有興趣成爲導師嗎？</p>
             </div>
             <div class="leftText font-Acumin-Variable-Concept" v-else>
                 <p>Interested in </p>
-                <p>becoming a Mentor?</p>
+                <p>Becoming a Mentor?</p>
             </div>
             <img src="../assets/images/Mentorship_QR_Eng.png" alt="" class="qrCode">
         </div>
@@ -53,7 +53,7 @@
 
     const arr = ref([
         {
-            "title": {"eng": "STARTUPS<br>INVOLVEMENT", "china": "投入<br>創科生態園"},
+            "title": {"eng": "STARTUPS<br>INVOLVEMENT", "china": "投入創科生態園"},
             "textArr": [
                 {"eng": "Glimpse of the Experience", "china": "體驗分享"},
                 {"eng": "Success Stories", "china": "成功案例"},
@@ -62,7 +62,7 @@
         {
             "title": {"eng": "MENTORSHIP", "china": "導師計劃"},
             "textArr": [
-                {"eng": "What is mentorship programme?", "china": "導師計劃是什麼？"},
+                {"eng": "What is Mentorship Programme?", "china": "導師計劃是什麼？"},
                 {"eng": "What will you Gain?", "china": "你可以從中獲得什麼？"},
                 {"eng": "Glimpse of the Experience", "china": "經驗分享"},
             ]

@@ -52,8 +52,9 @@
 </template>
 <script setup>
     import InnOcircle from '../assets/images/InnOcircle.jpg'
-    import TipsyThursday from '../assets/images/Alumni.jpg'
+    import TipsyThursday from '../assets/images/TipsyThursday.jpg'
     import DAO from '../assets/images/DAO.jpeg'
+    import Alumni from '../assets/images/Alumni.jpg'
     import Christmasparty from '../assets/images/Christmasparty.jpg'
     import basketballmatch from '../assets/images/basketballmatch.jpg'
     import MatchingDay2022 from '../assets/images/MatchingDay2022.jpg'
@@ -88,9 +89,9 @@
             "imgInfo": [
                 {img: InnOcircle, text: 'InnOcircle',},
                 {img: TipsyThursday, text: 'TipsyThursday',},
-                {img: DAO, text: 'DAO',},
-                {img: Christmasparty, text: 'Christmas party',},
-                {img: basketballmatch, text: 'basketball match',},
+                {img: Alumni, text: 'Alumni',},
+                {img: Christmasparty, text: 'Christmas Party',},
+                {img: basketballmatch, text: 'Basketball Match',},
             ]
         },
         {
@@ -102,8 +103,13 @@
         },
         {
             "imgInfo": [
-                {img: IdeationAndIncubationProgrammesGraduationDay, text: 'Ideation & Incubation Programmes Graduation Day 2023',}
+                {img: MatchingDay2022,text: 'Matching Day 2022',},
+                {img: MatchingDay2022Two, text: 'Matching Day 2022',},
+                {img: SkillsAndThematicSharing, text: 'Skills and Thematic Sharing',},
             ]
+            // "imgInfo": [
+            //     {img: IdeationAndIncubationProgrammesGraduationDay, text: 'Ideation & Incubation Programmes Graduation Day 2023',}
+            // ]
         },
     ])
 
@@ -174,12 +180,12 @@
                         },
                         {
                             "textTtile": {'eng': '', 'china': ''},
-                            "textCon": {'eng': "Join our community of experienced mentors and professionals who will guide you on your path to success. Unlock invaluable skills and knowledge through thematic sharing on Talent & Capital, Reach & Match, and Guide & Promote.", 'china': '加入我們這個由經驗豐富的導師和專業人士組成的社群，他們將引導您邁向成功之路。通過有關人才與資本、規模與匹配、引導與推廣的主題分享，導師將帶給您寶貴的技能和知識。'},
+                            "textCon": {'eng': "<br>Join our community of experienced mentors and professionals who will guide you on your path to success. Unlock invaluable skills and knowledge through thematic sharing on Talent & Capital, Reach & Match, and Guide & Promote.", 'china': '<br>加入我們這個由經驗豐富的導師和專業人士組成的社群，他們將引導您邁向成功之路。通過有關人才與資本、規模與匹配、引導與推廣的主題分享，導師將帶給您寶貴的技能和知識。'},
                             "isShow": true
                         },
                         {
                             "textTtile": {'eng': '', 'china': ''},
-                            "textCon": {'eng': "Get ready to seize future business opportunities with first-hand advice from the best in the field. Together, let's ignite your innovation journey and unleash your true potential.", 'china': '準備好傾聽業界能手的第一手建議，獲得未來商機。讓我們一起點燃您的創科之旅，釋放您的無窮潛力。'},
+                            "textCon": {'eng': "<br>Get ready to seize future business opportunities with first-hand advice from the best in the field. Together, let's ignite your innovation journey and unleash your true potential.", 'china': '<br>準備好傾聽業界能手的第一手建議，獲得未來商機。讓我們一起點燃您的創科之旅，釋放您的無窮潛力。'},
                             "isShow": true
                         }
                     ]
@@ -225,7 +231,7 @@
                 },
                 {
                     "title": {'eng': 'What Will You Gain?', 'china': '你可以從中獲得什麼？'},
-                    "isShowPhoto": true,
+                    "isShowPhoto": false,
                     "textArr": [
                         {
                             "textTtile": {'eng': 'Business Opportunities', 'china': '商業機會'},
@@ -234,7 +240,7 @@
                         },
                         {
                             "textTtile": {'eng': 'Value-added Services', 'china': '增值服務'},
-                            "textCon": {'eng': "Ignite your journey to success with our Investment Matching opportunity and personalized Investment Consultation, tailored to your unique needs. Connect with the best minds in the industry through our free talent matching service by CTgoodjobs. Learn and grow with our dynamic seminars and training sessions, designed to equip you with the skills to succeed.", 'china': '點亮您的成功之路。我們提供投資配對機會和個性化的投資諮詢，根據您的獨特需求量身定制。通過我們與CTgoodjobs合作的免費人才配對服務，結識行業內最優秀的人才。通過我們設計的研討會和培訓課程，學習和成長，獲得成功之路所需的技能。'},
+                            "textCon": {'eng': "Ignite your journey to success with our Investment Matching opportunity and personalized Investment Consultation, tailored to your unique needs. <br>Connect with the best minds in the industry through our free talent matching service by CTgoodjobs. Learn and grow with our dynamic seminars and training sessions, designed to equip you with the skills to succeed.", 'china': '點亮您的成功之路。我們提供投資配對機會和個性化的投資諮詢，根據您的獨特需求量身定制。通過我們與CTgoodjobs合作的免費人才配對服務，結識行業內最優秀的人才。通過我們設計的研討會和培訓課程，學習和成長，獲得成功之路所需的技能。'},
                             "isShow": false
                         },
                         {
