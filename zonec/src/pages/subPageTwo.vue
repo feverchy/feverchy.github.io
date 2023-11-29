@@ -7,6 +7,32 @@
             <el-scrollbar height="100%">
 
                 <p class="title font-avenir-lt">{{isChinese ? arr[type].cons[typeTwo].title.china : arr[type].cons[typeTwo].title.eng}}</p>
+
+                <div class="contentTwo" v-if="arr[type].cons[typeTwo].isVideo">
+                    <div class="caseBox">
+                        <div class="case cursorPointer" @click="initialIndex=0,isPop=true">
+                            <div class="caseCon">
+                                <p class="textTwo font-avenir-black">Talent & Capital</p>
+                            </div>
+                        </div>
+                        <div class="case cursorPointer" @click="initialIndex=3,isPop=true">
+                            <div class="caseCon">
+                                <p class="textTwo font-avenir-black">Reach & Match</p>
+                            </div>
+                        </div>
+                        <div class="case cursorPointer" @click="initialIndex=4,isPop=true">
+                            <div class="caseCon">
+                                <p class="textTwo font-avenir-black">Strategy & Guidance</p>
+                            </div>
+                        </div>
+                        <div class="case cursorPointer" @click="initialIndex=5,isPop=true">
+                            <div class="caseCon">
+                                <p class="textTwo font-avenir-black">{{isChinese? '影片':'Video'}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div v-for="(item, index) in arr[type].cons[typeTwo].textArr" :key="index">
                     <div class="conTitle font-avenir" v-if="item.textTtile.china"><span class="cursorPointer" @click="item.isShow ? item.isShow=false : item.isShow=true">{{item.isShow ? '-':'+'}}</span>{{isChinese ? item.textTtile.china : item.textTtile.eng}}</div>
                     <div class="content" v-if="item.isShow">
@@ -14,12 +40,12 @@
                     </div>
                 </div>
 
-                <div class="videoBox" v-if="arr[type].cons[typeTwo].isVideo">
+                <!-- <div class="videoBox" v-if="arr[type].cons[typeTwo].isVideo">
                     <video ref="videoRef" controls>
                         <source :src="video" type="video/mp4" />
                         您的浏览器不支持 video 标签。
                     </video>
-                </div>
+                </div> -->
             </el-scrollbar>
             <div class="btnBox">
                 <el-button :class="isChinese?'hover':''" @click="isChinese=true">中</el-button>
@@ -37,9 +63,23 @@
         </div>
         <div class="layerBox" v-if="isPop">
             <div class="popBox">
-                <div class="popConBox">
+                <div class="popConBox" v-if="arr[type].cons[typeTwo].isVideo">
+                    <el-carousel :autoplay="false" v-if="initialIndex==0">
+                        <el-carousel-item v-for="(item, index) in imgVideoArr.slice(0, 3)" :key="index" v-html="item"></el-carousel-item>
+                    </el-carousel>
+                    <el-carousel :autoplay="false" v-if="initialIndex==3">
+                        <el-carousel-item v-html="imgVideoArr[3]"></el-carousel-item>
+                    </el-carousel>
+                    <el-carousel :autoplay="false" v-if="initialIndex==4">
+                        <el-carousel-item v-html="imgVideoArr[4]"></el-carousel-item>
+                    </el-carousel>
+                    <el-carousel :autoplay="false" v-if="initialIndex==5">
+                        <el-carousel-item v-html="imgVideoArr[5]"></el-carousel-item>
+                    </el-carousel>
+                </div>
+                <div class="popConBox" v-else>
                     <el-carousel>
-                        <el-carousel-item v-for="(item, index) in imgs[typeTwo].imgInfo" :key="index">
+                        <el-carousel-item v-for="(item, index) in imgs[type].imgArr[typeTwo].imgInfo" :key="index">
                             <img :src="item.img" alt="">
                             <div class="bottomPop font-avenir">{{item.text}}</div>
                         </el-carousel-item>
@@ -84,32 +124,55 @@
     const isShowTwo = ref(false)//是否显示
     const isPop = ref(false)//是否显示彈窗
 
+    const initialIndex = ref(0)//初始索引
+    const imgVideoArr = ref([
+        `<img src="${img1}" alt="">`,
+        `<img src="${img2}" alt="">`,
+        `<img src="${img3}" alt="">`,
+        `<img src="${img4}" alt="">`,
+        `<img src="${img5}" alt="">`,
+        `<video ref="videoRef" controls><source src="${video}" type="video/mp4" />您的浏览器不支持 video 标签。</video>`
+    ])
+
+    //圖片數組
     const imgs = ref([
         {
-            "imgInfo": [
-                {img: InnOcircle, text: 'InnOcircle',},
-                {img: TipsyThursday, text: 'TipsyThursday',},
-                {img: Alumni, text: 'Alumni',},
-                {img: Christmasparty, text: 'Christmas Party',},
-                {img: basketballmatch, text: 'Basketball Match',},
-            ]
+            "imgArr":[
+                {
+                    "imgInfo": [
+                        {img: InnOcircle, text: 'InnOcircle',},
+                        {img: TipsyThursday, text: 'TipsyThursday',},
+                        {img: DAO, text: 'DAO',},
+                        {img: Christmasparty, text: 'Christmas Party',},
+                        {img: basketballmatch, text: 'Basketball Match',},
+                    ]
+                },{"imgInfo": []}
+            ],
         },
         {
-            "imgInfo": [
-                {img: MatchingDay2022,text: 'Matching Day 2022',},
-                {img: MatchingDay2022Two, text: 'Matching Day 2022',},
-                {img: SkillsAndThematicSharing, text: 'Skills and Thematic Sharing',},
-            ]
+            "imgArr":[
+                {"imgInfo": [],},{"imgInfo": [],},
+                {
+                    "imgInfo": [
+                        {img: SkillsAndThematicSharing, text: 'Skills and Thematic Sharing',},
+                        {img: MatchingDay2022,text: 'Matching Day 2022',},
+                        {img: MatchingDay2022Two, text: 'Matching Day 2022',},
+                    ]
+                }
+            ],
         },
         {
-            "imgInfo": [
-                {img: MatchingDay2022,text: 'Matching Day 2022',},
-                {img: MatchingDay2022Two, text: 'Matching Day 2022',},
-                {img: SkillsAndThematicSharing, text: 'Skills and Thematic Sharing',},
-            ]
-            // "imgInfo": [
-            //     {img: IdeationAndIncubationProgrammesGraduationDay, text: 'Ideation & Incubation Programmes Graduation Day 2023',}
-            // ]
+            "imgArr":[
+                {
+                    "imgInfo": [{img: Alumni, text: 'Alumni',}],
+                },
+                {"imgInfo": [],},
+                {
+                    "imgInfo": [
+                        {img: IdeationAndIncubationProgrammesGraduationDay, text: 'Ideation and Incubation Programmes Graduation Day 2023'}
+                    ]
+                }
+            ],
         },
     ])
 
@@ -149,7 +212,7 @@
                     "textArr": [
                         {
                             "textTtile": {'eng': '', 'china': ''},
-                            "textCon": {'eng': `<img src="${img1}" alt=""><img src="${img2}" alt=""><img src="${img3}" alt=""><img src="${img4}" alt=""><img src="${img5}" alt="">`, 'china': `<img src="${img1}" alt=""><img src="${img2}" alt=""><img src="${img3}" alt=""><img src="${img4}" alt=""><img src="${img5}" alt="">`},
+                            "textCon": {'eng': '', 'china': ''},
                             "isShow": true
                         }
                     ]

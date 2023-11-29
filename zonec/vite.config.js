@@ -50,7 +50,10 @@ export default ({ mode }) => {
                 autoInstall: true,
             }),
             WindiCSS()
-        ]
+        ],
+        build: {
+            outDir: 'cordova/www', // Set the output directory for build
+        }
     })
 }
 
