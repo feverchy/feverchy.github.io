@@ -8,21 +8,21 @@
 
                 <p class="title font-avenir-lt">{{isChinese ? arr[type].cons[typeTwo].title.china : arr[type].cons[typeTwo].title.eng}}</p>
 
-                <div class="contentTwo" v-if="arr[type].cons[typeTwo].isVideo">
+                <div class="contentTwo contentThree" v-if="arr[type].cons[typeTwo].isVideo">
                     <div class="caseBox">
                         <div class="case cursorPointer" @click="initialIndex=0,isPop=true">
                             <div class="caseCon">
-                                <p class="textTwo font-avenir-black">Talent & Capital</p>
+                                <p class="textTwo font-avenir-black">{{isChinese ? '人才與資金':'Talent & Capital'}}</p>
                             </div>
                         </div>
                         <div class="case cursorPointer" @click="initialIndex=3,isPop=true">
                             <div class="caseCon">
-                                <p class="textTwo font-avenir-black">Reach & Match</p>
+                                <p class="textTwo font-avenir-black">{{isChinese ? '連接與配對':'Reach & Match'}}</p>
                             </div>
                         </div>
                         <div class="case cursorPointer" @click="initialIndex=4,isPop=true">
                             <div class="caseCon">
-                                <p class="textTwo font-avenir-black">Strategy & Guidance</p>
+                                <p class="textTwo font-avenir-black">{{isChinese ? '策略與指引':'Strategy & Guidance'}}</p>
                             </div>
                         </div>
                         <div class="case cursorPointer" @click="initialIndex=5,isPop=true">
@@ -91,16 +91,16 @@
     </div>
 </template>
 <script setup>
-    import InnOcircle from '../assets/images/InnOcircle.jpg'
-    import TipsyThursday from '../assets/images/TipsyThursday.jpg'
-    import DAO from '../assets/images/DAO.jpeg'
-    import Alumni from '../assets/images/Alumni.jpg'
-    import Christmasparty from '../assets/images/Christmasparty.jpg'
-    import basketballmatch from '../assets/images/basketballmatch.jpg'
-    import MatchingDay2022 from '../assets/images/MatchingDay2022.jpg'
-    import MatchingDay2022Two from '../assets/images/MatchingDay20222.jpg'
-    import SkillsAndThematicSharing from '../assets/images/SkillsandThematicSharing.jpg'
-    import IdeationAndIncubationProgrammesGraduationDay from '../assets/images/IdeationandIncubationProgrammesGraduationDay2023.jpg'
+    import InnOcircle from '../assets/images/InnOcircle.png'
+    import TipsyThursday from '../assets/images/TipsyThursday.png'
+    import DAO from '../assets/images/DAO.png'
+    import Alumni from '../assets/images/Alumni.png'
+    import Christmasparty from '../assets/images/Christmasparty.png'
+    import basketballmatch from '../assets/images/basketballmatch.png'
+    import MatchingDay2022 from '../assets/images/MatchingDay2022.png'
+    import MatchingDay2022Two from '../assets/images/MatchingDay20222.png'
+    import SkillsAndThematicSharing from '../assets/images/SkillsandThematicSharing.png'
+    import IdeationAndIncubationProgrammesGraduationDay from '../assets/images/IdeationandIncubationProgrammesGraduationDay2023.png'
     import img1 from '../assets/images/1.png'
     import img2 from '../assets/images/2.png'
     import img3 from '../assets/images/3.png'
