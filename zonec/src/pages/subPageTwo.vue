@@ -88,9 +88,13 @@
                 <el-icon class="cursorPointer" @click="isPop=false"><CloseBold /></el-icon>
             </div>
         </div>
+        <AutoRedirect />
     </div>
 </template>
 <script setup>
+
+    import AutoRedirect from '../components/AutoRedirect.vue'
+
     import InnOcircle from '../assets/images/InnOcircle.png'
     import TipsyThursday from '../assets/images/TipsyThursday.png'
     import DAO from '../assets/images/DAO.png'
@@ -142,7 +146,7 @@
                     "imgInfo": [
                         {img: InnOcircle, text: 'InnOcircle',},
                         {img: TipsyThursday, text: 'TipsyThursday',},
-                        {img: DAO, text: 'DAO',},
+                        {img: DAO, text: 'Timeout Tuesday',},
                         {img: Christmasparty, text: 'Christmas Party',},
                         {img: basketballmatch, text: 'Basketball Match',},
                     ]

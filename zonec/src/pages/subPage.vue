@@ -27,6 +27,7 @@
             </div>
         </div>
         <div class="qrCodeBox" v-if="type==1" :class="isChinese ? 'hover' : ''">
+            <img src="../assets/images/Mentorship_QR_Eng.png" alt="" class="qrCode">
             <div class="leftText font-Acumin-Variable-Concept" v-if="isChinese">
                 <p>有興趣成爲導師嗎？</p>
             </div>
@@ -34,11 +35,12 @@
                 <p>Interested in </p>
                 <p>Becoming a Mentor?</p>
             </div>
-            <img src="../assets/images/Mentorship_QR_Eng.png" alt="" class="qrCode">
         </div>
+        <AutoRedirect />
     </div>
 </template>
 <script setup>
+    import AutoRedirect from '../components/AutoRedirect.vue'
     const route = useRoute()//路由
     const router = useRouter()//路由
     import { storeToRefs } from 'pinia'
@@ -63,7 +65,7 @@
             "title": {"eng": "MENTORSHIP", "china": "導師計劃"},
             "textArr": [
                 {"eng": "What is Mentorship Programme?", "china": "導師計劃是什麼？"},
-                {"eng": "What will you Gain?", "china": "你可以從中獲得什麼？"},
+                {"eng": "What will You Gain?", "china": "你可以從中獲得什麼？"},
                 {"eng": "Glimpse of the Experience", "china": "經驗分享"},
             ]
         },
@@ -71,7 +73,7 @@
             "title": {"eng": "ALUMNI", "china": "香港科學園創科會"},
             "textArr": [
                 {"eng": "What is HKSTP Startups Alumni Association?", "china": "什麼是香港科學園創科會？"},
-                {"eng": "What will you Gain?", "china": "你可以從中獲得什麼？"},
+                {"eng": "What will You Gain?", "china": "你可以從中獲得什麼？"},
                 {"eng": "Glimpse of the Experience", "china": "經驗分享"},
             ]
         },

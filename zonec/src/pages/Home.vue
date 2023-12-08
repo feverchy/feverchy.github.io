@@ -17,9 +17,11 @@
                 <el-button :class="isChinese?'':'hover'" @click="isChinese=false">ENG</el-button>
             </div>
         </div>
+        <AutoRedirect />
     </div>
 </template>
 <script setup>
+    import AutoRedirect from '../components/AutoRedirect.vue'
     const router = useRouter()//路由
     import { storeToRefs } from 'pinia'
     import { useStore } from '~/store/counter'

@@ -34,11 +34,11 @@
             }
         }   
     }
-    .qrCodeBox{@apply flex items-end;position:absolute;bottom:.5rem;right:.45rem;
-        .leftText{text-align:right;color:#fff;font-size:.37rem;line-height:1;
+    .qrCodeBox{@apply flex flex-col items-center;position:absolute;bottom:.2rem;right:.45rem;
+        .leftText{text-align:center;color:#fff;font-size:.34rem;line-height:1;margin-top:.2rem;
             p{font-weight:600;}
         }
-        img{width:1.5rem;margin-left:.15rem;}
+        img{width:1.5rem;}
     }
     .qrCodeBox.hover{@apply items-center;
         .leftText{line-height:initial;}
@@ -65,7 +65,7 @@
 .subPage.FOOD{background:#6c79db;
     .conBox{
         .content{
-            .title{color:#6c79db;}
+            .title{color:#6c79db;font-size:1.3rem;}
             .caseBox{color:#6c79db;
                 .case{
                     .caseCon{border-color:#6c79db;}

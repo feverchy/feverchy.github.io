@@ -18,9 +18,11 @@
             </div>
             <el-button class="bottomBtn" @click="router.push('/Home')"><el-icon><ArrowRight /></el-icon></el-button>
         </div>
+        <AutoRedirect />
     </div>
 </template>
 <script setup>
+    import AutoRedirect from '../components/AutoRedirect.vue'
     const router = useRouter()//路由
     import { storeToRefs } from 'pinia'
     import { useStore } from '~/store/counter'
