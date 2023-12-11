@@ -6,10 +6,12 @@
         <img class="backgImg" src="../assets/images/backg_img_all.png" alt="">
         <div class="conBox">
             <img class="titleBox" src="../assets/images/home_title_img.png" alt="">
-            <div class="buttonBox">
-                <div class="btn animate__animated cursorPointer" v-for="(btn, index) in buttons" :key="index" :class="getAnimationClass(index)" @click="router.push({ path: '/subPage', query: { type: index }})">
-                    <div class="text hover" v-if="isChinese">{{btn.china}}</div>
-                    <div class="text" v-else v-html="btn.eng"></div>
+            <div class="poitionBox">
+                <div class="buttonBox">
+                    <div class="btn animate__animated cursorPointer" v-for="(btn, index) in buttons" :key="index" :class="getAnimationClass(index)" @click="router.push({ path: '/subPage', query: { type: index }})">
+                        <div class="text hover" v-if="isChinese">{{btn.china}}</div>
+                        <div class="text" v-else v-html="btn.eng"></div>
+                    </div>
                 </div>
             </div>
             <div class="btnBox">
