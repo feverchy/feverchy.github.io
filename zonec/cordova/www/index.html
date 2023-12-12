@@ -1,18 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
     <title>Vite + Vue</title>
-  <script type="module" crossorigin src="/assets/index-b79489eb.js"></script>
-  <link rel="stylesheet" href="/assets/index-99426f40.css">
-</head>
+    <script type="text/javascript" charset="utf-8">
+      document.addEventListener("deviceready", onDeviceReady, false);
 
-<body>
+      function onDeviceReady() {
+        window.plugins.insomnia.keepAwake();
+        setInterval(function () {
+          window.screen.brightness = 0.99;
+        }, 5000);
+        document.addEventListener("backbutton", onBackKeyDown, false);
+      }
+
+      function onBackKeyDown(e) {
+        e.preventDefault();
+        // Your custom logic or exit app code here
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/index-a4914ef3.js"></script>
+    <link rel="stylesheet" href="/assets/index-3cee1eaa.css">
+  </head>
+
+  <body>
     <div id="app"></div>
     
-</body>
-
+  </body>
 </html>
